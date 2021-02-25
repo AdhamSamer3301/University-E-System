@@ -78,6 +78,8 @@
     <Reference Include="NHibernate, Version=5.3.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
       <HintPath>..\packages\NHibernate.5.3.5\lib\net461\NHibernate.dll</HintPath>
     </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="Remotion.Linq, Version=2.2.0.0, Culture=neutral, PublicKeyToken=fee00910d6e5f53b, processorArchitecture=MSIL">
       <HintPath>..\packages\Remotion.Linq.2.2.0\lib\net45\Remotion.Linq.dll</HintPath>
     </Reference>
@@ -143,6 +145,7 @@
     <Reference Include="System.Transactions" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -152,6 +155,7 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Authentications\AdminLogIn.cs">
@@ -171,6 +175,30 @@
     </Compile>
     <Compile Include="Authentications\StudentLogIn.designer.cs">
       <DependentUpon>StudentLogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chatstm\Chat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chatstm\Chat.Designer.cs">
+      <DependentUpon>Chat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chatstm\frmSend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chatstm\frmSend.Designer.cs">
+      <DependentUpon>frmSend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chatstm\ucLogin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Chatstm\ucLogin.Designer.cs">
+      <DependentUpon>ucLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chatstm\ucMain.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Chatstm\ucMain.Designer.cs">
+      <DependentUpon>ucMain.cs</DependentUpon>
     </Compile>
     <Compile Include="DataBase\_University_E_SystemDataSet.cs">
       <DependentUpon>_University_E_SystemDataSet.xsd</DependentUpon>
@@ -256,6 +284,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Authentications\StudentLogIn.resx">
       <DependentUpon>StudentLogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chatstm\Chat.resx">
+      <DependentUpon>Chat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chatstm\frmSend.resx">
+      <DependentUpon>frmSend.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chatstm\ucLogin.resx">
+      <DependentUpon>ucLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chatstm\ucMain.resx">
+      <DependentUpon>ucMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainApp\Admin\Admin Forms\FacultyManagement.resx">
       <DependentUpon>FacultyManagement.cs</DependentUpon>
@@ -343,12 +383,24 @@
     <PackageReference Include="EntityFramework">
       <Version>6.2.0</Version>
     </PackageReference>
+    <PackageReference Include="MaterialSkin.Updated">
+      <Version>0.2.2</Version>
+    </PackageReference>
     <PackageReference Include="MongoDB.Driver.Core">
       <Version>2.11.6</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Download Chat icon sign with gold color, vector EPS10 illustration for free.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chat Speech Bubble, Chat Icons, Bubble Icons, Speech Icons PNG and Vector with Transparent Background for Free Download.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_messages_16_171351.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

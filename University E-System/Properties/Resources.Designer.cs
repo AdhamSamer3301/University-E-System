@@ -19,7 +19,7 @@ namespace University_E_System.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     public class Resources {
@@ -57,6 +57,37 @@ namespace University_E_System.Properties {
             }
             set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Chat_Speech_Bubble__Chat_Icons__Bubble_Icons__Speech_Icons_PNG_and_Vector_with_Transparent_Background_for_Free_Download {
+            get {
+                object obj = ResourceManager.GetObject("Chat Speech Bubble, Chat Icons, Bubble Icons, Speech Icons PNG and Vector with Tr" +
+                        "ansparent Background for Free Download", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Download_Chat_icon_sign_with_gold_color__vector_EPS10_illustration_for_free {
+            get {
+                object obj = ResourceManager.GetObject("Download Chat icon sign with gold color, vector EPS10 illustration for free", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap iconfinder_messages_16_171351 {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_messages_16_171351", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
