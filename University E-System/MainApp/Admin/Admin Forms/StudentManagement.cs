@@ -2,6 +2,8 @@
 using System;
 using System.Drawing;
 using System.Windows.Forms;
+using Login_SignUp.MainApp;
+using University_E_System.MainApp;
 
 namespace Login_SignUp.Admin_Forms
 {
@@ -109,7 +111,7 @@ namespace Login_SignUp.Admin_Forms
             bindingNavigatorAddNewItem.PerformClick();
         }
 
-        private void PrintProf_Click(object sender, EventArgs e)
+        private void PrintStd_Click(object sender, EventArgs e)
         {
             DGVPrinter printer = new DGVPrinter
             {
@@ -124,6 +126,12 @@ namespace Login_SignUp.Admin_Forms
                 FooterSpacing = 15
             };
             printer.PrintDataGridView(studentDataGridView);
+        }
+
+        private void helpBtn_Click(object sender, EventArgs e)
+        {
+            University_E_System.MainApp.Help h = new University_E_System.MainApp.Help();
+            h.Show();
         }
     }
 }

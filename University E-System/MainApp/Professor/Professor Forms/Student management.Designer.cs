@@ -68,19 +68,19 @@
             this.phoneTextBox = new System.Windows.Forms.TextBox();
             this.PicBox = new System.Windows.Forms.PictureBox();
             this.studentDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.departmentBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.departmentIDComboBox = new System.Windows.Forms.ComboBox();
             this.facultyBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.facultyIDComboBox = new System.Windows.Forms.ComboBox();
             this.helpbtn = new System.Windows.Forms.Button();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PrintStd = new Guna.UI2.WinForms.Guna2Button();
             studentIDLabel = new System.Windows.Forms.Label();
             studentNameLabel = new System.Windows.Forms.Label();
             e_MailLabel = new System.Windows.Forms.Label();
@@ -457,6 +457,7 @@
             this.passwordTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.studentBindingSource, "Password", true));
             this.passwordTextBox.Location = new System.Drawing.Point(118, 114);
             this.passwordTextBox.Name = "passwordTextBox";
+            this.passwordTextBox.PasswordChar = '*';
             this.passwordTextBox.Size = new System.Drawing.Size(121, 20);
             this.passwordTextBox.TabIndex = 65;
             // 
@@ -486,7 +487,6 @@
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
             this.dataGridViewTextBoxColumn5,
             this.dataGridViewImageColumn1,
             this.dataGridViewTextBoxColumn6,
@@ -496,55 +496,6 @@
             this.studentDataGridView.Name = "studentDataGridView";
             this.studentDataGridView.Size = new System.Drawing.Size(438, 350);
             this.studentDataGridView.TabIndex = 72;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "StudentID";
-            this.dataGridViewTextBoxColumn1.HeaderText = "StudentID";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "StudentName";
-            this.dataGridViewTextBoxColumn2.HeaderText = "StudentName";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "E_Mail";
-            this.dataGridViewTextBoxColumn3.HeaderText = "E_Mail";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "Password";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Password";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "Phone";
-            this.dataGridViewTextBoxColumn5.HeaderText = "Phone";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            // 
-            // dataGridViewImageColumn1
-            // 
-            this.dataGridViewImageColumn1.DataPropertyName = "PP";
-            this.dataGridViewImageColumn1.HeaderText = "PP";
-            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "FacultyID";
-            this.dataGridViewTextBoxColumn6.HeaderText = "FacultyID";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "DepartmentID";
-            this.dataGridViewTextBoxColumn7.HeaderText = "DepartmentID";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
             // 
             // departmentBindingSource
             // 
@@ -594,12 +545,81 @@
             this.helpbtn.UseVisualStyleBackColor = true;
             this.helpbtn.Click += new System.EventHandler(this.helpbtn_Click);
             // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "StudentID";
+            this.dataGridViewTextBoxColumn1.HeaderText = "StudentID";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "StudentName";
+            this.dataGridViewTextBoxColumn2.HeaderText = "StudentName";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "E_Mail";
+            this.dataGridViewTextBoxColumn3.HeaderText = "E_Mail";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "Phone";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Phone";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            // 
+            // dataGridViewImageColumn1
+            // 
+            this.dataGridViewImageColumn1.DataPropertyName = "PP";
+            this.dataGridViewImageColumn1.HeaderText = "PP";
+            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "FacultyID";
+            this.dataGridViewTextBoxColumn6.HeaderText = "FacultyID";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "DepartmentID";
+            this.dataGridViewTextBoxColumn7.HeaderText = "DepartmentID";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            // 
+            // PrintStd
+            // 
+            this.PrintStd.BackColor = System.Drawing.Color.Goldenrod;
+            this.PrintStd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.PrintStd.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.PrintStd.BorderRadius = 6;
+            this.PrintStd.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
+            this.PrintStd.BorderThickness = 2;
+            this.PrintStd.CheckedState.Parent = this.PrintStd;
+            this.PrintStd.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.PrintStd.CustomImages.Parent = this.PrintStd;
+            this.PrintStd.FillColor = System.Drawing.Color.GhostWhite;
+            this.PrintStd.Font = new System.Drawing.Font("Segoe Print", 10.2F, System.Drawing.FontStyle.Bold);
+            this.PrintStd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.PrintStd.HoverState.Parent = this.PrintStd;
+            this.PrintStd.Location = new System.Drawing.Point(102, 418);
+            this.PrintStd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.PrintStd.Name = "PrintStd";
+            this.PrintStd.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.PrintStd.ShadowDecoration.Parent = this.PrintStd;
+            this.PrintStd.Size = new System.Drawing.Size(95, 43);
+            this.PrintStd.TabIndex = 76;
+            this.PrintStd.Text = "Print";
+            this.PrintStd.Click += new System.EventHandler(this.PrintStd_Click);
+            // 
             // Student_management
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.GhostWhite;
             this.ClientSize = new System.Drawing.Size(802, 561);
+            this.Controls.Add(this.PrintStd);
             this.Controls.Add(this.helpbtn);
             this.Controls.Add(this.facultyIDComboBox);
             this.Controls.Add(this.departmentIDComboBox);
@@ -670,20 +690,20 @@
         private System.Windows.Forms.TextBox phoneTextBox;
         private System.Windows.Forms.PictureBox PicBox;
         private System.Windows.Forms.DataGridView studentDataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
         private DataBase._University_E_SystemDataSetTableAdapters.DepartmentTableAdapter departmentTableAdapter;
         private System.Windows.Forms.BindingSource departmentBindingSource;
         private DataBase._University_E_SystemDataSetTableAdapters.FacultyTableAdapter facultyTableAdapter;
         private System.Windows.Forms.ComboBox departmentIDComboBox;
         private System.Windows.Forms.BindingSource facultyBindingSource;
         private System.Windows.Forms.ComboBox facultyIDComboBox;
+        private System.Windows.Forms.Button helpbtn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
-        private System.Windows.Forms.Button helpbtn;
+        private Guna.UI2.WinForms.Guna2Button PrintStd;
     }
 }

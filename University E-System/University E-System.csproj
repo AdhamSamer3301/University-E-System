@@ -246,6 +246,12 @@
     <Compile Include="MainApp\Professor\Professor Forms\Student management.Designer.cs">
       <DependentUpon>Student management.cs</DependentUpon>
     </Compile>
+    <Compile Include="MainApp\StdHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainApp\StdHelp.Designer.cs">
+      <DependentUpon>StdHelp.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainApp\Student\Student Forms\Student Management.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -324,6 +330,9 @@
     <EmbeddedResource Include="MainApp\Professor\Professor Forms\Student management.resx">
       <DependentUpon>Student management.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MainApp\StdHelp.resx">
+      <DependentUpon>StdHelp.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainApp\Student\Student Forms\Student Management.resx">
       <DependentUpon>Student Management.cs</DependentUpon>
     </EmbeddedResource>
@@ -391,6 +400,9 @@
     </PackageReference>
     <PackageReference Include="EntityFramework">
       <Version>6.2.0</Version>
+    </PackageReference>
+    <PackageReference Include="EPPlus.Core">
+      <Version>1.5.4</Version>
     </PackageReference>
     <PackageReference Include="MaterialSkin.Updated">
       <Version>0.2.2</Version>

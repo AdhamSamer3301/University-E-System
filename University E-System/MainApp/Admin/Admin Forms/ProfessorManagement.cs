@@ -1,7 +1,9 @@
 ﻿using DGVPrinterHelper;
+using OfficeOpenXml.FormulaParsing.Excel.Functions.Information;
 using System;
 using System.Drawing;
 using System.Windows.Forms;
+using University_E_System.MainApp;
 
 namespace Login_SignUp.Admin_Forms
 {
@@ -33,17 +35,17 @@ namespace Login_SignUp.Admin_Forms
 
         }
 
-        private void AddFac_Click(object sender, EventArgs e)
+        private void AddProf_Click(object sender, EventArgs e)
         {
             bindingNavigatorAddNewItem.PerformClick();
         }
 
-        private void btnDeleteFaculty_Click(object sender, EventArgs e)
+        private void btnDeleteProf_Click(object sender, EventArgs e)
         {
             bindingNavigatorDeleteItem.PerformClick();
         }
 
-        private void btnSubmitFacTAmin_Click(object sender, EventArgs e)
+        private void btnSubmitProfAdmin_Click(object sender, EventArgs e)
         {
             if (professorNameTextBox.Text.Equals(""))
             {
@@ -90,8 +92,8 @@ namespace Login_SignUp.Admin_Forms
 
         private void HelpBtn_Click(object sender, EventArgs e)
         {
-            /*Help h = new Help();
-            h.Show();*/
+            University_E_System.MainApp.Help h = new University_E_System.MainApp.Help();
+            h.Show();
             
         }
     }

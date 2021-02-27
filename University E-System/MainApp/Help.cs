@@ -10,7 +10,6 @@ namespace University_E_System.MainApp
             InitializeComponent();
         }
 
-
         private void Help_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the '_University_E_SystemDataSet._Fac___Dept' table. You can move, or remove it, as needed.

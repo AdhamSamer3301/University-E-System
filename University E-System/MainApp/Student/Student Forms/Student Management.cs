@@ -34,8 +34,7 @@ namespace University_E_System.MainApp.Student.Student_Forms
 
             //  TODO: This line of code loads data into the '_University_E_SystemDataSet.Student' table. You can move, or remove it, as needed.
             //this.studentTableAdapter.Fill(_University_E_SystemDataSet.Student);
-
-
+            studentBindingNavigator.Hide();
         }
 
         private void StudentBindingNavigatorSaveItem_Click(object sender, EventArgs e)
@@ -47,12 +46,9 @@ namespace University_E_System.MainApp.Student.Student_Forms
 
 
         private void btnEditStudentInfo_Click(object sender, EventArgs e)
-        {
-               
+        {  
             studentBindingNavigatorSaveItem.PerformClick();
             MessageBox.Show("Saved !");
-               
-            
         }
 
        
@@ -81,18 +77,23 @@ namespace University_E_System.MainApp.Student.Student_Forms
                     else
                     {
                         MessageBox.Show(" Wrong ID or PW !");
-                    }
-                            
-                 }
+                    }        
+             }
                     
-                }
             }
+        }
 
         private void Help_Click(object sender, EventArgs e)
         {
-            Help h = new Help();
+            Help s = new Help();
+            s.Show();
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            StdHelp h = new StdHelp();
             h.Show();
         }
     }
-    }
+}
 

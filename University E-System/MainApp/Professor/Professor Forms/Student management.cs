@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DGVPrinterHelper;
+using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace University_E_System.MainApp.Professor.Professor_Forms
@@ -98,6 +100,23 @@ namespace University_E_System.MainApp.Professor.Professor_Forms
         {
             Help h = new Help();
             h.Show();
+        }
+
+        private void PrintStd_Click(object sender, EventArgs e)
+        {
+            DGVPrinter printer = new DGVPrinter
+            {
+                Title = "Students Report",//Header 
+                SubTitle = string.Format("Date: {0} ", DateTime.Today.ToShortDateString()),
+                SubTitleFormatFlags = StringFormatFlags.LineLimit | StringFormatFlags.NoClip,
+                PageNumbers = true,
+                PageNumberInHeader = false,
+                PorportionalColumns = true,
+                HeaderCellAlignment = StringAlignment.Center,
+                Footer = "KFS", //Footer 
+                FooterSpacing = 15
+            };
+            printer.PrintDataGridView(studentDataGridView);
         }
     }
 }

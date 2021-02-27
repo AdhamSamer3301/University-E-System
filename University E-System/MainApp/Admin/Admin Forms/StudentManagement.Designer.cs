@@ -80,7 +80,8 @@
             this.studentDataGridView = new System.Windows.Forms.DataGridView();
             this.facultyTableAdapter = new University_E_System.DataBase._University_E_SystemDataSetTableAdapters.FacultyTableAdapter();
             this.departmentTableAdapter = new University_E_System.DataBase._University_E_SystemDataSetTableAdapters.DepartmentTableAdapter();
-            this.PrintProf = new Guna.UI2.WinForms.Guna2Button();
+            this.PrintStd = new Guna.UI2.WinForms.Guna2Button();
+            this.helpBtn = new System.Windows.Forms.Button();
             departmentIDLabel = new System.Windows.Forms.Label();
             facultyIDLabel = new System.Windows.Forms.Label();
             pPLabel = new System.Windows.Forms.Label();
@@ -105,18 +106,18 @@
             departmentIDLabel.AutoSize = true;
             departmentIDLabel.Location = new System.Drawing.Point(35, 299);
             departmentIDLabel.Name = "departmentIDLabel";
-            departmentIDLabel.Size = new System.Drawing.Size(108, 21);
+            departmentIDLabel.Size = new System.Drawing.Size(94, 21);
             departmentIDLabel.TabIndex = 67;
-            departmentIDLabel.Text = "Department ID:";
+            departmentIDLabel.Text = "Department :";
             // 
             // facultyIDLabel
             // 
             facultyIDLabel.AutoSize = true;
             facultyIDLabel.Location = new System.Drawing.Point(35, 264);
             facultyIDLabel.Name = "facultyIDLabel";
-            facultyIDLabel.Size = new System.Drawing.Size(76, 21);
+            facultyIDLabel.Size = new System.Drawing.Size(62, 21);
             facultyIDLabel.TabIndex = 65;
-            facultyIDLabel.Text = "Faculty ID:";
+            facultyIDLabel.Text = "Faculty :";
             // 
             // pPLabel
             // 
@@ -532,10 +533,10 @@
             this.panel1.Controls.Add(this.PPUpload);
             this.panel1.Controls.Add(this.btnSubmitStdAdmin);
             this.panel1.Font = new System.Drawing.Font("Segoe Print", 9F);
-            this.panel1.Location = new System.Drawing.Point(0, 3);
+            this.panel1.Location = new System.Drawing.Point(0, 27);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(363, 514);
+            this.panel1.Size = new System.Drawing.Size(363, 508);
             this.panel1.TabIndex = 3;
             // 
             // dataGridViewImageColumn1
@@ -604,7 +605,7 @@
             this.studentDataGridView.DataSource = this.studentBindingSource;
             this.studentDataGridView.Location = new System.Drawing.Point(369, 33);
             this.studentDataGridView.Name = "studentDataGridView";
-            this.studentDataGridView.Size = new System.Drawing.Size(644, 389);
+            this.studentDataGridView.Size = new System.Drawing.Size(452, 389);
             this.studentDataGridView.TabIndex = 4;
             // 
             // facultyTableAdapter
@@ -615,30 +616,40 @@
             // 
             this.departmentTableAdapter.ClearBeforeFill = true;
             // 
-            // PrintProf
+            // PrintStd
             // 
-            this.PrintProf.BackColor = System.Drawing.Color.Goldenrod;
-            this.PrintProf.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.PrintProf.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.PrintProf.BorderRadius = 6;
-            this.PrintProf.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
-            this.PrintProf.BorderThickness = 2;
-            this.PrintProf.CheckedState.Parent = this.PrintProf;
-            this.PrintProf.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.PrintProf.CustomImages.Parent = this.PrintProf;
-            this.PrintProf.FillColor = System.Drawing.Color.GhostWhite;
-            this.PrintProf.Font = new System.Drawing.Font("Segoe Print", 10.2F, System.Drawing.FontStyle.Bold);
-            this.PrintProf.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.PrintProf.HoverState.Parent = this.PrintProf;
-            this.PrintProf.Location = new System.Drawing.Point(876, 483);
-            this.PrintProf.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.PrintProf.Name = "PrintProf";
-            this.PrintProf.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.PrintProf.ShadowDecoration.Parent = this.PrintProf;
-            this.PrintProf.Size = new System.Drawing.Size(95, 43);
-            this.PrintProf.TabIndex = 61;
-            this.PrintProf.Text = "Print";
-            this.PrintProf.Click += new System.EventHandler(this.PrintProf_Click);
+            this.PrintStd.BackColor = System.Drawing.Color.Goldenrod;
+            this.PrintStd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.PrintStd.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.PrintStd.BorderRadius = 6;
+            this.PrintStd.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
+            this.PrintStd.BorderThickness = 2;
+            this.PrintStd.CheckedState.Parent = this.PrintStd;
+            this.PrintStd.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.PrintStd.CustomImages.Parent = this.PrintStd;
+            this.PrintStd.FillColor = System.Drawing.Color.GhostWhite;
+            this.PrintStd.Font = new System.Drawing.Font("Segoe Print", 10.2F, System.Drawing.FontStyle.Bold);
+            this.PrintStd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.PrintStd.HoverState.Parent = this.PrintStd;
+            this.PrintStd.Location = new System.Drawing.Point(726, 438);
+            this.PrintStd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.PrintStd.Name = "PrintStd";
+            this.PrintStd.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.PrintStd.ShadowDecoration.Parent = this.PrintStd;
+            this.PrintStd.Size = new System.Drawing.Size(95, 43);
+            this.PrintStd.TabIndex = 61;
+            this.PrintStd.Text = "Print";
+            this.PrintStd.Click += new System.EventHandler(this.PrintStd_Click);
+            // 
+            // helpBtn
+            // 
+            this.helpBtn.Location = new System.Drawing.Point(827, 44);
+            this.helpBtn.Name = "helpBtn";
+            this.helpBtn.Size = new System.Drawing.Size(27, 28);
+            this.helpBtn.TabIndex = 62;
+            this.helpBtn.Text = "?";
+            this.helpBtn.UseVisualStyleBackColor = true;
+            this.helpBtn.Click += new System.EventHandler(this.helpBtn_Click);
             // 
             // StudentManagement
             // 
@@ -646,7 +657,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.GhostWhite;
             this.ClientSize = new System.Drawing.Size(1054, 636);
-            this.Controls.Add(this.PrintProf);
+            this.Controls.Add(this.helpBtn);
+            this.Controls.Add(this.PrintStd);
             this.Controls.Add(this.studentDataGridView);
             this.Controls.Add(this.studentBindingNavigator);
             this.Controls.Add(this.panel1);
@@ -713,6 +725,7 @@
         private University_E_System.DataBase._University_E_SystemDataSetTableAdapters.FacultyTableAdapter facultyTableAdapter;
         private System.Windows.Forms.BindingSource departmentBindingSource;
         private University_E_System.DataBase._University_E_SystemDataSetTableAdapters.DepartmentTableAdapter departmentTableAdapter;
-        private Guna.UI2.WinForms.Guna2Button PrintProf;
+        private Guna.UI2.WinForms.Guna2Button PrintStd;
+        private System.Windows.Forms.Button helpBtn;
     }
 }

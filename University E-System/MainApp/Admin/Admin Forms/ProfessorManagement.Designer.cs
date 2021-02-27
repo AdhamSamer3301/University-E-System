@@ -376,6 +376,7 @@
             this.passwordTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.professorBindingSource, "Password", true));
             this.passwordTextBox.Location = new System.Drawing.Point(120, 187);
             this.passwordTextBox.Name = "passwordTextBox";
+            this.passwordTextBox.PasswordChar = '*';
             this.passwordTextBox.Size = new System.Drawing.Size(100, 20);
             this.passwordTextBox.TabIndex = 13;
             // 
@@ -427,7 +428,7 @@
             this.AddFac.Size = new System.Drawing.Size(95, 43);
             this.AddFac.TabIndex = 59;
             this.AddFac.Text = "Add";
-            this.AddFac.Click += new System.EventHandler(this.AddFac_Click);
+            this.AddFac.Click += new System.EventHandler(this.AddProf_Click);
             // 
             // btnSubmitFacTAmin
             // 
@@ -452,7 +453,7 @@
             this.btnSubmitFacTAmin.Size = new System.Drawing.Size(95, 43);
             this.btnSubmitFacTAmin.TabIndex = 58;
             this.btnSubmitFacTAmin.Text = "Submit";
-            this.btnSubmitFacTAmin.Click += new System.EventHandler(this.btnSubmitFacTAmin_Click);
+            this.btnSubmitFacTAmin.Click += new System.EventHandler(this.btnSubmitProfAdmin_Click);
             // 
             // btnDeleteFaculty
             // 
@@ -477,7 +478,7 @@
             this.btnDeleteFaculty.Size = new System.Drawing.Size(92, 43);
             this.btnDeleteFaculty.TabIndex = 57;
             this.btnDeleteFaculty.Text = "Delete";
-            this.btnDeleteFaculty.Click += new System.EventHandler(this.btnDeleteFaculty_Click);
+            this.btnDeleteFaculty.Click += new System.EventHandler(this.btnDeleteProf_Click);
             // 
             // facultyBindingSource
             // 
