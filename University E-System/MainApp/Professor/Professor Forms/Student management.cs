@@ -93,5 +93,11 @@ namespace University_E_System.MainApp.Professor.Professor_Forms
         {
             bindingNavigatorDeleteItem.PerformClick();
         }
+
+        private void helpbtn_Click(object sender, EventArgs e)
+        {
+            Help h = new Help();
+            h.Show();
+        }
     }
 }

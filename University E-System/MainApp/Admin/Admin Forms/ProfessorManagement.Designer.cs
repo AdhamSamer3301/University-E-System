@@ -56,6 +56,11 @@
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.professorBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.professorDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.professorIDTextBox = new System.Windows.Forms.TextBox();
             this.professorNameTextBox = new System.Windows.Forms.TextBox();
             this.e_MailTextBox = new System.Windows.Forms.TextBox();
@@ -68,11 +73,7 @@
             this.departmentBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.departmentIDComboBox = new System.Windows.Forms.ComboBox();
             this.facultyIDComboBox = new System.Windows.Forms.ComboBox();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HelpBtn = new System.Windows.Forms.Button();
             professorIDLabel = new System.Windows.Forms.Label();
             professorNameLabel = new System.Windows.Forms.Label();
             facultyIDLabel = new System.Windows.Forms.Label();
@@ -199,7 +200,7 @@
             this.professorBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.professorBindingNavigator.Name = "professorBindingNavigator";
             this.professorBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.professorBindingNavigator.Size = new System.Drawing.Size(984, 25);
+            this.professorBindingNavigator.Size = new System.Drawing.Size(831, 25);
             this.professorBindingNavigator.TabIndex = 0;
             this.professorBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -309,10 +310,41 @@
             this.dataGridViewTextBoxColumn10,
             this.dataGridViewTextBoxColumn11});
             this.professorDataGridView.DataSource = this.professorBindingSource;
-            this.professorDataGridView.Location = new System.Drawing.Point(390, 40);
+            this.professorDataGridView.Location = new System.Drawing.Point(317, 40);
             this.professorDataGridView.Name = "professorDataGridView";
             this.professorDataGridView.Size = new System.Drawing.Size(478, 252);
             this.professorDataGridView.TabIndex = 1;
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "ProfessorID";
+            this.dataGridViewTextBoxColumn7.HeaderText = "ProfessorID";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "ProfessorName";
+            this.dataGridViewTextBoxColumn8.HeaderText = "ProfessorName";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            this.dataGridViewTextBoxColumn9.DataPropertyName = "FacultyID";
+            this.dataGridViewTextBoxColumn9.HeaderText = "FacultyID";
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.DataPropertyName = "DepartmentID";
+            this.dataGridViewTextBoxColumn10.HeaderText = "DepartmentID";
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            this.dataGridViewTextBoxColumn11.DataPropertyName = "E_Mail";
+            this.dataGridViewTextBoxColumn11.HeaderText = "E_Mail";
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
             // 
             // professorIDTextBox
             // 
@@ -483,43 +515,23 @@
             this.facultyIDComboBox.TabIndex = 62;
             this.facultyIDComboBox.ValueMember = "FacultyID";
             // 
-            // dataGridViewTextBoxColumn7
+            // HelpBtn
             // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "ProfessorID";
-            this.dataGridViewTextBoxColumn7.HeaderText = "ProfessorID";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            this.dataGridViewTextBoxColumn7.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "ProfessorName";
-            this.dataGridViewTextBoxColumn8.HeaderText = "ProfessorName";
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            // 
-            // dataGridViewTextBoxColumn9
-            // 
-            this.dataGridViewTextBoxColumn9.DataPropertyName = "FacultyID";
-            this.dataGridViewTextBoxColumn9.HeaderText = "FacultyID";
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            // 
-            // dataGridViewTextBoxColumn10
-            // 
-            this.dataGridViewTextBoxColumn10.DataPropertyName = "DepartmentID";
-            this.dataGridViewTextBoxColumn10.HeaderText = "DepartmentID";
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-            // 
-            // dataGridViewTextBoxColumn11
-            // 
-            this.dataGridViewTextBoxColumn11.DataPropertyName = "E_Mail";
-            this.dataGridViewTextBoxColumn11.HeaderText = "E_Mail";
-            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            this.HelpBtn.Location = new System.Drawing.Point(800, 46);
+            this.HelpBtn.Name = "HelpBtn";
+            this.HelpBtn.Size = new System.Drawing.Size(29, 27);
+            this.HelpBtn.TabIndex = 63;
+            this.HelpBtn.Text = "?";
+            this.HelpBtn.UseVisualStyleBackColor = true;
+            this.HelpBtn.Click += new System.EventHandler(this.HelpBtn_Click);
             // 
             // ProfessorManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.GhostWhite;
-            this.ClientSize = new System.Drawing.Size(984, 609);
+            this.ClientSize = new System.Drawing.Size(831, 384);
+            this.Controls.Add(this.HelpBtn);
             this.Controls.Add(this.facultyIDComboBox);
             this.Controls.Add(this.departmentIDComboBox);
             this.Controls.Add(this.PrintProf);
@@ -593,5 +605,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
+        private System.Windows.Forms.Button HelpBtn;
     }
 }

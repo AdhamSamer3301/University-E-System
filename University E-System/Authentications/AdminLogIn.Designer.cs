@@ -48,10 +48,10 @@ namespace University_E_System.Authentications
             // 
             this.panel3.BackColor = System.Drawing.Color.Yellow;
             this.panel3.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.panel3.Location = new System.Drawing.Point(40, 325);
+            this.panel3.Location = new System.Drawing.Point(34, 264);
             this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(215, 1);
+            this.panel3.Size = new System.Drawing.Size(184, 1);
             this.panel3.TabIndex = 2;
             // 
             // txtBoxPasswordAdmin
@@ -72,14 +72,14 @@ namespace University_E_System.Authentications
             this.txtBoxPasswordAdmin.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtBoxPasswordAdmin.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtBoxPasswordAdmin.HoverState.Parent = this.txtBoxPasswordAdmin;
-            this.txtBoxPasswordAdmin.Location = new System.Drawing.Point(40, 283);
+            this.txtBoxPasswordAdmin.Location = new System.Drawing.Point(34, 230);
             this.txtBoxPasswordAdmin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtBoxPasswordAdmin.Name = "txtBoxPasswordAdmin";
             this.txtBoxPasswordAdmin.PasswordChar = '*';
             this.txtBoxPasswordAdmin.PlaceholderText = "";
             this.txtBoxPasswordAdmin.SelectedText = "";
             this.txtBoxPasswordAdmin.ShadowDecoration.Parent = this.txtBoxPasswordAdmin;
-            this.txtBoxPasswordAdmin.Size = new System.Drawing.Size(215, 36);
+            this.txtBoxPasswordAdmin.Size = new System.Drawing.Size(184, 29);
             this.txtBoxPasswordAdmin.TabIndex = 4;
             // 
             // btnLogInAdmin
@@ -92,10 +92,10 @@ namespace University_E_System.Authentications
             this.btnLogInAdmin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnLogInAdmin.Font = new System.Drawing.Font("Segoe Print", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogInAdmin.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.btnLogInAdmin.Location = new System.Drawing.Point(82, 364);
+            this.btnLogInAdmin.Location = new System.Drawing.Point(70, 296);
             this.btnLogInAdmin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLogInAdmin.Name = "btnLogInAdmin";
-            this.btnLogInAdmin.Size = new System.Drawing.Size(112, 41);
+            this.btnLogInAdmin.Size = new System.Drawing.Size(96, 33);
             this.btnLogInAdmin.TabIndex = 5;
             this.btnLogInAdmin.Text = "Log In";
             this.btnLogInAdmin.UseVisualStyleBackColor = false;
@@ -110,23 +110,23 @@ namespace University_E_System.Authentications
             this.btnBackAdmin.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBackAdmin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
             this.btnBackAdmin.HoverState.Parent = this.btnBackAdmin;
-            this.btnBackAdmin.Location = new System.Drawing.Point(-4, 0);
+            this.btnBackAdmin.Location = new System.Drawing.Point(-3, 0);
             this.btnBackAdmin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBackAdmin.Name = "btnBackAdmin";
             this.btnBackAdmin.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.btnBackAdmin.ShadowDecoration.Parent = this.btnBackAdmin;
-            this.btnBackAdmin.Size = new System.Drawing.Size(58, 45);
+            this.btnBackAdmin.Size = new System.Drawing.Size(50, 37);
             this.btnBackAdmin.TabIndex = 11;
             this.btnBackAdmin.Text = "<-";
             this.btnBackAdmin.Click += new System.EventHandler(this.guna2CircleButton1_Click);
             // 
             // lblAdmin
             // 
-            this.lblAdmin.Font = new System.Drawing.Font("Algerian", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAdmin.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAdmin.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lblAdmin.Location = new System.Drawing.Point(76, 153);
+            this.lblAdmin.Location = new System.Drawing.Point(65, 124);
             this.lblAdmin.Name = "lblAdmin";
-            this.lblAdmin.Size = new System.Drawing.Size(132, 69);
+            this.lblAdmin.Size = new System.Drawing.Size(113, 56);
             this.lblAdmin.TabIndex = 12;
             this.lblAdmin.Text = "Admin";
             this.lblAdmin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -141,13 +141,13 @@ namespace University_E_System.Authentications
             this.btnCloseLoginAdmin.Font = new System.Drawing.Font("Segoe Print", 10.8F, System.Drawing.FontStyle.Bold);
             this.btnCloseLoginAdmin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
             this.btnCloseLoginAdmin.HoverState.Parent = this.btnCloseLoginAdmin;
-            this.btnCloseLoginAdmin.Location = new System.Drawing.Point(256, 0);
+            this.btnCloseLoginAdmin.Location = new System.Drawing.Point(219, 0);
             this.btnCloseLoginAdmin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCloseLoginAdmin.Name = "btnCloseLoginAdmin";
             this.btnCloseLoginAdmin.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
             this.btnCloseLoginAdmin.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.btnCloseLoginAdmin.ShadowDecoration.Parent = this.btnCloseLoginAdmin;
-            this.btnCloseLoginAdmin.Size = new System.Drawing.Size(43, 32);
+            this.btnCloseLoginAdmin.Size = new System.Drawing.Size(37, 26);
             this.btnCloseLoginAdmin.TabIndex = 10;
             this.btnCloseLoginAdmin.Text = "X";
             this.btnCloseLoginAdmin.Click += new System.EventHandler(this.btnCloseLoginAdmin_Click);
@@ -155,12 +155,11 @@ namespace University_E_System.Authentications
             // guna2HtmlLabel1
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel1.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(40, 240);
-            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(51, 199);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(205, 37);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(138, 25);
             this.guna2HtmlLabel1.TabIndex = 14;
             this.guna2HtmlLabel1.Text = "Enter The Password";
             // 
@@ -168,18 +167,19 @@ namespace University_E_System.Authentications
             // 
             this.guna2Panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("guna2Panel1.BackgroundImage")));
             this.guna2Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.guna2Panel1.Location = new System.Drawing.Point(82, 64);
+            this.guna2Panel1.Location = new System.Drawing.Point(70, 52);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(135, 86);
+            this.guna2Panel1.Size = new System.Drawing.Size(116, 70);
             this.guna2Panel1.TabIndex = 15;
             // 
             // AdminLogIn
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(300, 450);
+            this.ClientSize = new System.Drawing.Size(257, 366);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.guna2HtmlLabel1);
             this.Controls.Add(this.lblAdmin);

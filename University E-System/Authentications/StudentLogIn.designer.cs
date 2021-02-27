@@ -372,6 +372,7 @@ namespace University_E_System
             this.passwordTextBox1.ForeColor = System.Drawing.SystemColors.ScrollBar;
             this.passwordTextBox1.Location = new System.Drawing.Point(106, 250);
             this.passwordTextBox1.Name = "passwordTextBox1";
+            this.passwordTextBox1.PasswordChar = '*';
             this.passwordTextBox1.Size = new System.Drawing.Size(128, 20);
             this.passwordTextBox1.TabIndex = 28;
             // 

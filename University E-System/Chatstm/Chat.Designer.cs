@@ -34,17 +34,19 @@ namespace University_E_System.Chatstm
             // 
             // MainContainer
             // 
-            this.MainContainer.Location = new System.Drawing.Point(12, 69);
+            this.MainContainer.Location = new System.Drawing.Point(9, 65);
+            this.MainContainer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MainContainer.Name = "MainContainer";
-            this.MainContainer.Size = new System.Drawing.Size(306, 549);
+            this.MainContainer.Size = new System.Drawing.Size(230, 437);
             this.MainContainer.TabIndex = 0;
             // 
             // Chat
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(330, 630);
+            this.ClientSize = new System.Drawing.Size(248, 512);
             this.Controls.Add(this.MainContainer);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.Name = "Chat";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

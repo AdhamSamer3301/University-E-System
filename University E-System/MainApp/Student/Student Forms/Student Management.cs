@@ -1,6 +1,7 @@
 ﻿using DocumentFormat.OpenXml.Office2010.Excel;
 using MongoDB.Driver.Core.Configuration;
 using System;
+using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
@@ -9,6 +10,7 @@ namespace University_E_System.MainApp.Student.Student_Forms
 {
     public partial class Student_Management : Form
     {
+        private const string ConnectionString = "Server = DESKTOP-NESPLEP; Database = University E-System; Integrated Security = true; ";
         public Student_Management()
         {
             InitializeComponent();
@@ -19,15 +21,17 @@ namespace University_E_System.MainApp.Student.Student_Forms
         private void Student_Management_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the '_University_E_SystemDataSet.Department' table. You can move, or remove it, as needed.
-            this.departmentTableAdapter.Fill(this._University_E_SystemDataSet.Department);
+            //this.departmentTableAdapter.Fill(this._University_E_SystemDataSet.Department);
             // TODO: This line of code loads data into the '_University_E_SystemDataSet.Faculty' table. You can move, or remove it, as needed.
-            this.facultyTableAdapter.Fill(this._University_E_SystemDataSet.Faculty);
-            
+            //this.facultyTableAdapter.Fill(this._University_E_SystemDataSet.Faculty);
+
+            //MessageBox.Show(s.Showdata().ToString());
+
             /*DataTable dt = new DataTable();
             SqlDataAdapter da = new SqlDataAdapter(s.showdata());
             da.Fill(dt);*/
 
-            
+
             //  TODO: This line of code loads data into the '_University_E_SystemDataSet.Student' table. You can move, or remove it, as needed.
             //this.studentTableAdapter.Fill(_University_E_SystemDataSet.Student);
 
@@ -44,60 +48,51 @@ namespace University_E_System.MainApp.Student.Student_Forms
 
         private void btnEditStudentInfo_Click(object sender, EventArgs e)
         {
-
-            if (studentNameTextBox.Text.Equals(""))
-            {
-                MessageBox.Show("Enter your Name");
-            }
-            else if (e_MailTextBox.Text.Equals("") && e_MailTextBox.Text.Contains("@"))
-            {
-                MessageBox.Show("Enter a valid E-mail");
-            }
-            else if (phoneTextBox.Text.Equals(""))
-            {
-                MessageBox.Show("Enter your Phone No.");
-            }
-            else if (passwordTextBox.Text.Equals(""))
-            {
-                MessageBox.Show("Enter a Password");
-            }
-            else if (passwordTextBox.TextLength < 8)
-            {
-                MessageBox.Show("Must be More than 8 characters ");
-            }
-            else
-            {
-                try
-                {
-                    studentBindingNavigatorSaveItem.PerformClick();
-                    MessageBox.Show("Saved !");
-                }
-                catch (System.Data.NoNullAllowedException)
-                {
-                    MessageBox.Show("Enter Faculty or Department");
-                }
-            }
+               
+            studentBindingNavigatorSaveItem.PerformClick();
+            MessageBox.Show("Saved !");
+               
+            
         }
 
-        private void PicUpload_Click(object sender, EventArgs e)
+       
+        private void Search_Click(object sender, EventArgs e)
         {
-            string imageLocation = "";
-            try
+
+            SqlDataReader reader = null;
+            using (SqlConnection con = new SqlConnection(ConnectionString))
             {
-                OpenFileDialog dialog = new OpenFileDialog
-                {
-                    Filter = "jpg files(*.jpg)|*.jpg| PNG files(*.png)|*.png| All Files(*.*)|*.* "
-                };
-                if (dialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
-                {
-                    imageLocation = dialog.FileName;
-                    PicBox.ImageLocation = imageLocation;
+                  if (con.State == ConnectionState.Closed)
+                      con.Open();
+                    
+             using (SqlCommand cmd = new SqlCommand("select * from Student where StudentID = @iD and Password =@PW", con))
+                 {
+                    cmd.Parameters.AddWithValue("@iD", studentIDTextBox.Text);
+                    cmd.Parameters.AddWithValue("@PW", passwordTextBox.Text);
+                    reader = cmd.ExecuteReader();
+                    if (reader.HasRows && reader!= null)
+                    {
+                        reader.Close();
+                        SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                        DataTable dt = new DataTable();
+                        adapter.Fill(dt);
+                        dataGridView1.DataSource = dt;
+                    }
+                    else
+                    {
+                        MessageBox.Show(" Wrong ID or PW !");
+                    }
+                            
+                 }
+                    
                 }
             }
-            catch (Exception)
-            {
-                MessageBox.Show("An Error Occured", "Error", MessageBoxButtons.AbortRetryIgnore, MessageBoxIcon.Error);
-            }
+
+        private void Help_Click(object sender, EventArgs e)
+        {
+            Help h = new Help();
+            h.Show();
         }
     }
-}
+    }
+

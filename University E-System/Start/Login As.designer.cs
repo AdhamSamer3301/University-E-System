@@ -34,6 +34,7 @@
             this.btnLogASProfessor = new Guna.UI2.WinForms.Guna2Button();
             this.btnLogASStudent = new Guna.UI2.WinForms.Guna2Button();
             this.panelLogoUniversity = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnMinimizeLoginAS
@@ -46,12 +47,12 @@
             this.btnMinimizeLoginAS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
             this.btnMinimizeLoginAS.HoverState.Parent = this.btnMinimizeLoginAS;
             this.btnMinimizeLoginAS.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnMinimizeLoginAS.Location = new System.Drawing.Point(420, -5);
+            this.btnMinimizeLoginAS.Location = new System.Drawing.Point(360, -4);
             this.btnMinimizeLoginAS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnMinimizeLoginAS.Name = "btnMinimizeLoginAS";
             this.btnMinimizeLoginAS.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.btnMinimizeLoginAS.ShadowDecoration.Parent = this.btnMinimizeLoginAS;
-            this.btnMinimizeLoginAS.Size = new System.Drawing.Size(48, 64);
+            this.btnMinimizeLoginAS.Size = new System.Drawing.Size(41, 52);
             this.btnMinimizeLoginAS.TabIndex = 2;
             this.btnMinimizeLoginAS.Text = "_";
             this.btnMinimizeLoginAS.Click += new System.EventHandler(this.guna2CircleButton2_Click);
@@ -66,13 +67,13 @@
             this.btnCloseLoginAS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
             this.btnCloseLoginAS.HoverState.Parent = this.btnCloseLoginAS;
             this.btnCloseLoginAS.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnCloseLoginAS.Location = new System.Drawing.Point(474, -3);
+            this.btnCloseLoginAS.Location = new System.Drawing.Point(406, -2);
             this.btnCloseLoginAS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCloseLoginAS.Name = "btnCloseLoginAS";
             this.btnCloseLoginAS.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
             this.btnCloseLoginAS.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.btnCloseLoginAS.ShadowDecoration.Parent = this.btnCloseLoginAS;
-            this.btnCloseLoginAS.Size = new System.Drawing.Size(51, 62);
+            this.btnCloseLoginAS.Size = new System.Drawing.Size(44, 50);
             this.btnCloseLoginAS.TabIndex = 0;
             this.btnCloseLoginAS.Text = "X";
             this.btnCloseLoginAS.Click += new System.EventHandler(this.guna2CircleButton1_Click);
@@ -91,11 +92,11 @@
             this.btnLogAsAdmin.Font = new System.Drawing.Font("Segoe Print", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogAsAdmin.ForeColor = System.Drawing.Color.Black;
             this.btnLogAsAdmin.HoverState.Parent = this.btnLogAsAdmin;
-            this.btnLogAsAdmin.Location = new System.Drawing.Point(140, 271);
+            this.btnLogAsAdmin.Location = new System.Drawing.Point(120, 220);
             this.btnLogAsAdmin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLogAsAdmin.Name = "btnLogAsAdmin";
             this.btnLogAsAdmin.ShadowDecoration.Parent = this.btnLogAsAdmin;
-            this.btnLogAsAdmin.Size = new System.Drawing.Size(262, 46);
+            this.btnLogAsAdmin.Size = new System.Drawing.Size(225, 37);
             this.btnLogAsAdmin.TabIndex = 4;
             this.btnLogAsAdmin.Text = "Admin";
             this.btnLogAsAdmin.Click += new System.EventHandler(this.btnLogAsAdmin_Click);
@@ -114,11 +115,11 @@
             this.btnLogASProfessor.Font = new System.Drawing.Font("Segoe Print", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogASProfessor.ForeColor = System.Drawing.Color.Black;
             this.btnLogASProfessor.HoverState.Parent = this.btnLogASProfessor;
-            this.btnLogASProfessor.Location = new System.Drawing.Point(140, 352);
+            this.btnLogASProfessor.Location = new System.Drawing.Point(120, 286);
             this.btnLogASProfessor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLogASProfessor.Name = "btnLogASProfessor";
             this.btnLogASProfessor.ShadowDecoration.Parent = this.btnLogASProfessor;
-            this.btnLogASProfessor.Size = new System.Drawing.Size(262, 46);
+            this.btnLogASProfessor.Size = new System.Drawing.Size(225, 37);
             this.btnLogASProfessor.TabIndex = 5;
             this.btnLogASProfessor.Text = "Professor";
             this.btnLogASProfessor.Click += new System.EventHandler(this.btnLogASProfessor_Click);
@@ -136,11 +137,11 @@
             this.btnLogASStudent.Font = new System.Drawing.Font("Segoe Print", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogASStudent.ForeColor = System.Drawing.Color.Black;
             this.btnLogASStudent.HoverState.Parent = this.btnLogASStudent;
-            this.btnLogASStudent.Location = new System.Drawing.Point(140, 436);
+            this.btnLogASStudent.Location = new System.Drawing.Point(120, 354);
             this.btnLogASStudent.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLogASStudent.Name = "btnLogASStudent";
             this.btnLogASStudent.ShadowDecoration.Parent = this.btnLogASStudent;
-            this.btnLogASStudent.Size = new System.Drawing.Size(262, 46);
+            this.btnLogASStudent.Size = new System.Drawing.Size(225, 37);
             this.btnLogASStudent.TabIndex = 6;
             this.btnLogASStudent.Text = "Student";
             this.btnLogASStudent.Click += new System.EventHandler(this.btnLogASStudent_Click);
@@ -149,19 +150,31 @@
             // 
             this.panelLogoUniversity.BackgroundImage = global::University_E_System.Properties.Resources.logo2;
             this.panelLogoUniversity.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panelLogoUniversity.Location = new System.Drawing.Point(140, 91);
+            this.panelLogoUniversity.Location = new System.Drawing.Point(120, 74);
+            this.panelLogoUniversity.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelLogoUniversity.Name = "panelLogoUniversity";
-            this.panelLogoUniversity.Size = new System.Drawing.Size(249, 162);
+            this.panelLogoUniversity.Size = new System.Drawing.Size(213, 132);
             this.panelLogoUniversity.TabIndex = 7;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(343, 411);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "Chat?";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Login_As
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(517, 551);
+            this.ClientSize = new System.Drawing.Size(443, 448);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.panelLogoUniversity);
             this.Controls.Add(this.btnCloseLoginAS);
             this.Controls.Add(this.btnMinimizeLoginAS);
@@ -186,5 +199,6 @@
         private Guna.UI2.WinForms.Guna2Button btnLogASProfessor;
         private Guna.UI2.WinForms.Guna2Button btnLogASStudent;
         private System.Windows.Forms.Panel panelLogoUniversity;
+        private System.Windows.Forms.Button button1;
     }
 }

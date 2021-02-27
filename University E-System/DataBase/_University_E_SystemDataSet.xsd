@@ -258,6 +258,25 @@ SELECT StudentID, StudentName, E_Mail, Password, FacultyID, DepartmentID, Phone,
             </Mappings>
             <Sources />
           </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Fac &amp; DeptTableAdapter" GeneratorDataComponentClassName="Fac___DeptTableAdapter" Name="Fac &amp; Dept" UserDataComponentName="Fac &amp; DeptTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="University_E_SystemConnectionString2 (Settings)" DbObjectName="[University E-System].dbo.[Fac &amp; Dept]" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT DepartmentID, DepartmentName, FacultyID, FacultyName FROM dbo.[Fac &amp; Dept]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="DepartmentID" DataSetColumn="DepartmentID" />
+              <Mapping SourceColumn="DepartmentName" DataSetColumn="DepartmentName" />
+              <Mapping SourceColumn="FacultyID" DataSetColumn="FacultyID" />
+              <Mapping SourceColumn="FacultyName" DataSetColumn="FacultyName" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
         </Tables>
         <Sources />
       </DataSource>
@@ -266,7 +285,7 @@ SELECT StudentID, StudentName, E_Mail, Password, FacultyID, DepartmentID, Phone,
   <xs:element name="_University_E_SystemDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="_University_E_SystemDataSet" msprop:Generator_UserDSName="_University_E_SystemDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Department" msprop:Generator_TableClassName="DepartmentDataTable" msprop:Generator_TableVarName="tableDepartment" msprop:Generator_RowChangedName="DepartmentRowChanged" msprop:Generator_TablePropName="Department" msprop:Generator_RowDeletingName="DepartmentRowDeleting" msprop:Generator_RowChangingName="DepartmentRowChanging" msprop:Generator_RowEvHandlerName="DepartmentRowChangeEventHandler" msprop:Generator_RowDeletedName="DepartmentRowDeleted" msprop:Generator_RowClassName="DepartmentRow" msprop:Generator_UserTableName="Department" msprop:Generator_RowEvArgName="DepartmentRowChangeEvent">
+        <xs:element name="Department" msprop:Generator_TableClassName="DepartmentDataTable" msprop:Generator_TableVarName="tableDepartment" msprop:Generator_TablePropName="Department" msprop:Generator_RowDeletingName="DepartmentRowDeleting" msprop:Generator_RowChangingName="DepartmentRowChanging" msprop:Generator_RowEvHandlerName="DepartmentRowChangeEventHandler" msprop:Generator_RowDeletedName="DepartmentRowDeleted" msprop:Generator_UserTableName="Department" msprop:Generator_RowChangedName="DepartmentRowChanged" msprop:Generator_RowEvArgName="DepartmentRowChangeEvent" msprop:Generator_RowClassName="DepartmentRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="DepartmentID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnDepartmentID" msprop:Generator_ColumnPropNameInRow="DepartmentID" msprop:Generator_ColumnPropNameInTable="DepartmentIDColumn" msprop:Generator_UserColumnName="DepartmentID" type="xs:int" />
@@ -281,7 +300,7 @@ SELECT StudentID, StudentName, E_Mail, Password, FacultyID, DepartmentID, Phone,
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Faculty" msprop:Generator_TableClassName="FacultyDataTable" msprop:Generator_TableVarName="tableFaculty" msprop:Generator_RowChangedName="FacultyRowChanged" msprop:Generator_TablePropName="Faculty" msprop:Generator_RowDeletingName="FacultyRowDeleting" msprop:Generator_RowChangingName="FacultyRowChanging" msprop:Generator_RowEvHandlerName="FacultyRowChangeEventHandler" msprop:Generator_RowDeletedName="FacultyRowDeleted" msprop:Generator_RowClassName="FacultyRow" msprop:Generator_UserTableName="Faculty" msprop:Generator_RowEvArgName="FacultyRowChangeEvent">
+        <xs:element name="Faculty" msprop:Generator_TableClassName="FacultyDataTable" msprop:Generator_TableVarName="tableFaculty" msprop:Generator_TablePropName="Faculty" msprop:Generator_RowDeletingName="FacultyRowDeleting" msprop:Generator_RowChangingName="FacultyRowChanging" msprop:Generator_RowEvHandlerName="FacultyRowChangeEventHandler" msprop:Generator_RowDeletedName="FacultyRowDeleted" msprop:Generator_UserTableName="Faculty" msprop:Generator_RowChangedName="FacultyRowChanged" msprop:Generator_RowEvArgName="FacultyRowChangeEvent" msprop:Generator_RowClassName="FacultyRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="FacultyID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnFacultyID" msprop:Generator_ColumnPropNameInRow="FacultyID" msprop:Generator_ColumnPropNameInTable="FacultyIDColumn" msprop:Generator_UserColumnName="FacultyID" type="xs:int" />
@@ -296,7 +315,7 @@ SELECT StudentID, StudentName, E_Mail, Password, FacultyID, DepartmentID, Phone,
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Professor" msprop:Generator_TableClassName="ProfessorDataTable" msprop:Generator_TableVarName="tableProfessor" msprop:Generator_RowChangedName="ProfessorRowChanged" msprop:Generator_TablePropName="Professor" msprop:Generator_RowDeletingName="ProfessorRowDeleting" msprop:Generator_RowChangingName="ProfessorRowChanging" msprop:Generator_RowEvHandlerName="ProfessorRowChangeEventHandler" msprop:Generator_RowDeletedName="ProfessorRowDeleted" msprop:Generator_RowClassName="ProfessorRow" msprop:Generator_UserTableName="Professor" msprop:Generator_RowEvArgName="ProfessorRowChangeEvent">
+        <xs:element name="Professor" msprop:Generator_TableClassName="ProfessorDataTable" msprop:Generator_TableVarName="tableProfessor" msprop:Generator_TablePropName="Professor" msprop:Generator_RowDeletingName="ProfessorRowDeleting" msprop:Generator_RowChangingName="ProfessorRowChanging" msprop:Generator_RowEvHandlerName="ProfessorRowChangeEventHandler" msprop:Generator_RowDeletedName="ProfessorRowDeleted" msprop:Generator_UserTableName="Professor" msprop:Generator_RowChangedName="ProfessorRowChanged" msprop:Generator_RowEvArgName="ProfessorRowChangeEvent" msprop:Generator_RowClassName="ProfessorRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ProfessorID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnProfessorID" msprop:Generator_ColumnPropNameInRow="ProfessorID" msprop:Generator_ColumnPropNameInTable="ProfessorIDColumn" msprop:Generator_UserColumnName="ProfessorID" type="xs:int" />
@@ -326,7 +345,7 @@ SELECT StudentID, StudentName, E_Mail, Password, FacultyID, DepartmentID, Phone,
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Student" msprop:Generator_TableClassName="StudentDataTable" msprop:Generator_TableVarName="tableStudent" msprop:Generator_RowChangedName="StudentRowChanged" msprop:Generator_TablePropName="Student" msprop:Generator_RowDeletingName="StudentRowDeleting" msprop:Generator_RowChangingName="StudentRowChanging" msprop:Generator_RowEvHandlerName="StudentRowChangeEventHandler" msprop:Generator_RowDeletedName="StudentRowDeleted" msprop:Generator_RowClassName="StudentRow" msprop:Generator_UserTableName="Student" msprop:Generator_RowEvArgName="StudentRowChangeEvent">
+        <xs:element name="Student" msprop:Generator_TableClassName="StudentDataTable" msprop:Generator_TableVarName="tableStudent" msprop:Generator_TablePropName="Student" msprop:Generator_RowDeletingName="StudentRowDeleting" msprop:Generator_RowChangingName="StudentRowChanging" msprop:Generator_RowEvHandlerName="StudentRowChangeEventHandler" msprop:Generator_RowDeletedName="StudentRowDeleted" msprop:Generator_UserTableName="Student" msprop:Generator_RowChangedName="StudentRowChanged" msprop:Generator_RowEvArgName="StudentRowChangeEvent" msprop:Generator_RowClassName="StudentRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="StudentID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnStudentID" msprop:Generator_ColumnPropNameInRow="StudentID" msprop:Generator_ColumnPropNameInTable="StudentIDColumn" msprop:Generator_UserColumnName="StudentID" type="xs:int" />
@@ -364,7 +383,7 @@ SELECT StudentID, StudentName, E_Mail, Password, FacultyID, DepartmentID, Phone,
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Prof" msprop:Generator_TableClassName="ProfDataTable" msprop:Generator_TableVarName="tableProf" msprop:Generator_TablePropName="Prof" msprop:Generator_RowDeletingName="ProfRowDeleting" msprop:Generator_RowChangingName="ProfRowChanging" msprop:Generator_RowEvHandlerName="ProfRowChangeEventHandler" msprop:Generator_RowDeletedName="ProfRowDeleted" msprop:Generator_UserTableName="Prof" msprop:Generator_RowChangedName="ProfRowChanged" msprop:Generator_RowEvArgName="ProfRowChangeEvent" msprop:Generator_RowClassName="ProfRow">
+        <xs:element name="Prof" msprop:Generator_TableClassName="ProfDataTable" msprop:Generator_TableVarName="tableProf" msprop:Generator_RowChangedName="ProfRowChanged" msprop:Generator_TablePropName="Prof" msprop:Generator_RowDeletingName="ProfRowDeleting" msprop:Generator_RowChangingName="ProfRowChanging" msprop:Generator_RowEvHandlerName="ProfRowChangeEventHandler" msprop:Generator_RowDeletedName="ProfRowDeleted" msprop:Generator_RowClassName="ProfRow" msprop:Generator_UserTableName="Prof" msprop:Generator_RowEvArgName="ProfRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ProfessorID" msprop:Generator_ColumnVarNameInTable="columnProfessorID" msprop:Generator_ColumnPropNameInRow="ProfessorID" msprop:Generator_ColumnPropNameInTable="ProfessorIDColumn" msprop:Generator_UserColumnName="ProfessorID" type="xs:int" />
@@ -406,6 +425,28 @@ SELECT StudentID, StudentName, E_Mail, Password, FacultyID, DepartmentID, Phone,
             </xs:sequence>
           </xs:complexType>
         </xs:element>
+        <xs:element name="Fac_x0020__x0026__x0020_Dept" msprop:Generator_TableClassName="_Fac___DeptDataTable" msprop:Generator_TableVarName="_tableFac___Dept" msprop:Generator_TablePropName="_Fac___Dept" msprop:Generator_RowDeletingName="_Fac___DeptRowDeleting" msprop:Generator_RowChangingName="_Fac___DeptRowChanging" msprop:Generator_RowEvHandlerName="_Fac___DeptRowChangeEventHandler" msprop:Generator_RowDeletedName="_Fac___DeptRowDeleted" msprop:Generator_UserTableName="Fac &amp; Dept" msprop:Generator_RowChangedName="_Fac___DeptRowChanged" msprop:Generator_RowEvArgName="_Fac___DeptRowChangeEvent" msprop:Generator_RowClassName="_Fac___DeptRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DepartmentID" msprop:Generator_ColumnVarNameInTable="columnDepartmentID" msprop:Generator_ColumnPropNameInRow="DepartmentID" msprop:Generator_ColumnPropNameInTable="DepartmentIDColumn" msprop:Generator_UserColumnName="DepartmentID" type="xs:int" />
+              <xs:element name="DepartmentName" msprop:Generator_ColumnVarNameInTable="columnDepartmentName" msprop:Generator_ColumnPropNameInRow="DepartmentName" msprop:Generator_ColumnPropNameInTable="DepartmentNameColumn" msprop:Generator_UserColumnName="DepartmentName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FacultyID" msprop:Generator_ColumnVarNameInTable="columnFacultyID" msprop:Generator_ColumnPropNameInRow="FacultyID" msprop:Generator_ColumnPropNameInTable="FacultyIDColumn" msprop:Generator_UserColumnName="FacultyID" type="xs:int" />
+              <xs:element name="FacultyName" msprop:Generator_ColumnVarNameInTable="columnFacultyName" msprop:Generator_ColumnPropNameInRow="FacultyName" msprop:Generator_ColumnPropNameInTable="FacultyNameColumn" msprop:Generator_UserColumnName="FacultyName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
       </xs:choice>
     </xs:complexType>
     <xs:unique name="Constraint1" msdata:PrimaryKey="true">
@@ -428,14 +469,19 @@ SELECT StudentID, StudentName, E_Mail, Password, FacultyID, DepartmentID, Phone,
       <xs:selector xpath=".//mstns:Prof" />
       <xs:field xpath="mstns:ProfessorID" />
     </xs:unique>
+    <xs:unique name="Fac_x0020__x0026__x0020_Dept_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Fac_x0020__x0026__x0020_Dept" />
+      <xs:field xpath="mstns:DepartmentID" />
+      <xs:field xpath="mstns:FacultyID" />
+    </xs:unique>
   </xs:element>
   <xs:annotation>
     <xs:appinfo>
-      <msdata:Relationship name="FK_Faculty_Department" msdata:parent="Faculty" msdata:child="Department" msdata:parentkey="FacultyID" msdata:childkey="FacultyID" msprop:Generator_UserChildTable="Department" msprop:Generator_ChildPropName="GetDepartmentRows" msprop:Generator_UserRelationName="FK_Faculty_Department" msprop:Generator_ParentPropName="FacultyRow" msprop:Generator_RelationVarName="relationFK_Faculty_Department" msprop:Generator_UserParentTable="Faculty" />
-      <msdata:Relationship name="FK_Department_Professor" msdata:parent="Department" msdata:child="Professor" msdata:parentkey="DepartmentID" msdata:childkey="DepartmentID" msprop:Generator_UserChildTable="Professor" msprop:Generator_ChildPropName="GetProfessorRows" msprop:Generator_UserRelationName="FK_Department_Professor" msprop:Generator_RelationVarName="relationFK_Department_Professor" msprop:Generator_UserParentTable="Department" msprop:Generator_ParentPropName="DepartmentRow" />
-      <msdata:Relationship name="FK_Faculty_Profesor" msdata:parent="Faculty" msdata:child="Professor" msdata:parentkey="FacultyID" msdata:childkey="FacultyID" msprop:Generator_UserChildTable="Professor" msprop:Generator_ChildPropName="GetProfessorRows" msprop:Generator_UserRelationName="FK_Faculty_Profesor" msprop:Generator_RelationVarName="relationFK_Faculty_Profesor" msprop:Generator_UserParentTable="Faculty" msprop:Generator_ParentPropName="FacultyRow" />
-      <msdata:Relationship name="FK_Departemnt_Student" msdata:parent="Department" msdata:child="Student" msdata:parentkey="DepartmentID" msdata:childkey="DepartmentID" msprop:Generator_UserChildTable="Student" msprop:Generator_ChildPropName="GetStudentRows" msprop:Generator_UserRelationName="FK_Departemnt_Student" msprop:Generator_RelationVarName="relationFK_Departemnt_Student" msprop:Generator_UserParentTable="Department" msprop:Generator_ParentPropName="DepartmentRow" />
-      <msdata:Relationship name="FK_Faculty_Student" msdata:parent="Faculty" msdata:child="Student" msdata:parentkey="FacultyID" msdata:childkey="FacultyID" msprop:Generator_UserChildTable="Student" msprop:Generator_ChildPropName="GetStudentRows" msprop:Generator_UserRelationName="FK_Faculty_Student" msprop:Generator_RelationVarName="relationFK_Faculty_Student" msprop:Generator_UserParentTable="Faculty" msprop:Generator_ParentPropName="FacultyRow" />
+      <msdata:Relationship name="FK_Faculty_Department" msdata:parent="Faculty" msdata:child="Department" msdata:parentkey="FacultyID" msdata:childkey="FacultyID" msprop:Generator_UserChildTable="Department" msprop:Generator_ChildPropName="GetDepartmentRows" msprop:Generator_UserRelationName="FK_Faculty_Department" msprop:Generator_RelationVarName="relationFK_Faculty_Department" msprop:Generator_UserParentTable="Faculty" msprop:Generator_ParentPropName="FacultyRow" />
+      <msdata:Relationship name="FK_Department_Professor" msdata:parent="Department" msdata:child="Professor" msdata:parentkey="DepartmentID" msdata:childkey="DepartmentID" msprop:Generator_UserChildTable="Professor" msprop:Generator_ChildPropName="GetProfessorRows" msprop:Generator_UserRelationName="FK_Department_Professor" msprop:Generator_ParentPropName="DepartmentRow" msprop:Generator_RelationVarName="relationFK_Department_Professor" msprop:Generator_UserParentTable="Department" />
+      <msdata:Relationship name="FK_Faculty_Profesor" msdata:parent="Faculty" msdata:child="Professor" msdata:parentkey="FacultyID" msdata:childkey="FacultyID" msprop:Generator_UserChildTable="Professor" msprop:Generator_ChildPropName="GetProfessorRows" msprop:Generator_UserRelationName="FK_Faculty_Profesor" msprop:Generator_ParentPropName="FacultyRow" msprop:Generator_RelationVarName="relationFK_Faculty_Profesor" msprop:Generator_UserParentTable="Faculty" />
+      <msdata:Relationship name="FK_Departemnt_Student" msdata:parent="Department" msdata:child="Student" msdata:parentkey="DepartmentID" msdata:childkey="DepartmentID" msprop:Generator_UserChildTable="Student" msprop:Generator_ChildPropName="GetStudentRows" msprop:Generator_UserRelationName="FK_Departemnt_Student" msprop:Generator_ParentPropName="DepartmentRow" msprop:Generator_RelationVarName="relationFK_Departemnt_Student" msprop:Generator_UserParentTable="Department" />
+      <msdata:Relationship name="FK_Faculty_Student" msdata:parent="Faculty" msdata:child="Student" msdata:parentkey="FacultyID" msdata:childkey="FacultyID" msprop:Generator_UserChildTable="Student" msprop:Generator_ChildPropName="GetStudentRows" msprop:Generator_UserRelationName="FK_Faculty_Student" msprop:Generator_ParentPropName="FacultyRow" msprop:Generator_RelationVarName="relationFK_Faculty_Student" msprop:Generator_UserParentTable="Faculty" />
     </xs:appinfo>
   </xs:annotation>
 </xs:schema>

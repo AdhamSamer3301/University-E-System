@@ -228,6 +228,12 @@
     <Compile Include="MainApp\Admin\Admin.Designer.cs">
       <DependentUpon>Admin.cs</DependentUpon>
     </Compile>
+    <Compile Include="MainApp\Help.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainApp\Help.Designer.cs">
+      <DependentUpon>Help.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainApp\Professor\Professor Forms\Professor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -308,6 +314,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainApp\Admin\Admin.resx">
       <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainApp\Help.resx">
+      <DependentUpon>Help.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainApp\Professor\Professor Forms\Professor.resx">
       <DependentUpon>Professor.cs</DependentUpon>

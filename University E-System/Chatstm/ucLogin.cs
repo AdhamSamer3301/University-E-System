@@ -29,5 +29,20 @@ namespace University_E_System.Chatstm
             Chat.Instance.Content.Controls.Add(new ucMain() { Dock = DockStyle.Fill });
             Chat.Instance.Content.Controls[0].SendToBack();
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void materialLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

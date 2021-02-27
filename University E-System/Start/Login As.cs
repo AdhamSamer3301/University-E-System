@@ -47,5 +47,11 @@ namespace University_E_System
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Chatstm.Chat c = new Chatstm.Chat();
+            c.Show();
+        }
     }
 }

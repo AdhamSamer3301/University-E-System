@@ -41,7 +41,6 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.professorBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this._University_E_SystemDataSet = new University_E_System.DataBase._University_E_SystemDataSet();
-            this.professorBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.professorTableAdapter = new University_E_System.DataBase._University_E_SystemDataSetTableAdapters.ProfessorTableAdapter();
             this.tableAdapterManager = new University_E_System.DataBase._University_E_SystemDataSetTableAdapters.TableAdapterManager();
             this.e_MailTextBox = new System.Windows.Forms.TextBox();
@@ -53,7 +52,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.PicBoxProfessorPassword)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.professorBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._University_E_SystemDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.professorBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // e_MailLabel
@@ -120,7 +118,7 @@
             this.btnLoginProfessor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.btnLoginProfessor.Location = new System.Drawing.Point(125, 347);
             this.btnLoginProfessor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnLoginProfessor.Name = "BtnLoginProfessor";
+            this.btnLoginProfessor.Name = "btnLoginProfessor";
             this.btnLoginProfessor.Size = new System.Drawing.Size(111, 41);
             this.btnLoginProfessor.TabIndex = 8;
             this.btnLoginProfessor.Text = "Log In";
@@ -172,11 +170,6 @@
             this._University_E_SystemDataSet.DataSetName = "_University_E_SystemDataSet";
             this._University_E_SystemDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // professorBindingSource1
-            // 
-            this.professorBindingSource1.DataMember = "Professor";
-            this.professorBindingSource1.DataSource = this._University_E_SystemDataSet;
-            // 
             // professorTableAdapter
             // 
             this.professorTableAdapter.ClearBeforeFill = true;
@@ -194,7 +187,6 @@
             // 
             this.e_MailTextBox.BackColor = System.Drawing.SystemColors.MenuText;
             this.e_MailTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.e_MailTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.professorBindingSource1, "E_Mail", true));
             this.e_MailTextBox.ForeColor = System.Drawing.SystemColors.ScrollBar;
             this.e_MailTextBox.Location = new System.Drawing.Point(125, 231);
             this.e_MailTextBox.Name = "e_MailTextBox";
@@ -205,10 +197,10 @@
             // 
             this.passwordTextBox.BackColor = System.Drawing.SystemColors.MenuText;
             this.passwordTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.passwordTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.professorBindingSource1, "Password", true));
             this.passwordTextBox.ForeColor = System.Drawing.SystemColors.ScrollBar;
             this.passwordTextBox.Location = new System.Drawing.Point(128, 273);
             this.passwordTextBox.Name = "passwordTextBox";
+            this.passwordTextBox.PasswordChar = '*';
             this.passwordTextBox.Size = new System.Drawing.Size(139, 20);
             this.passwordTextBox.TabIndex = 14;
             // 
@@ -239,7 +231,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.PicBoxProfessorPassword)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.professorBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this._University_E_SystemDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.professorBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -256,7 +247,6 @@
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.BindingSource professorBindingSource;
         private DataBase._University_E_SystemDataSet _University_E_SystemDataSet;
-        private System.Windows.Forms.BindingSource professorBindingSource1;
         private DataBase._University_E_SystemDataSetTableAdapters.ProfessorTableAdapter professorTableAdapter;
         private DataBase._University_E_SystemDataSetTableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.TextBox e_MailTextBox;

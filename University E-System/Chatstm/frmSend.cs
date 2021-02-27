@@ -24,9 +24,5 @@ namespace University_E_System.Chatstm
             manager.ColorScheme = new ColorScheme(Primary.Blue400, Primary.Blue500, Primary.Blue500, Accent.LightBlue200, TextShade.WHITE);
         }
 
-        private void frmSend_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

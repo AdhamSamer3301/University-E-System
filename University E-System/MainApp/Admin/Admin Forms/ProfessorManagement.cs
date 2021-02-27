@@ -22,7 +22,7 @@ namespace Login_SignUp.Admin_Forms
             this.facultyTableAdapter.Fill(this._University_E_SystemDataSet.Faculty);
             // TODO: This line of code loads data into the '_University_E_SystemDataSet.Professor' table. You can move, or remove it, as needed.
             this.professorTableAdapter.Fill(this._University_E_SystemDataSet.Professor);
-
+            professorBindingNavigator.Hide();
         }
 
         private void professorBindingNavigatorSaveItem_Click(object sender, EventArgs e)
@@ -88,5 +88,11 @@ namespace Login_SignUp.Admin_Forms
 
         }
 
+        private void HelpBtn_Click(object sender, EventArgs e)
+        {
+            /*Help h = new Help();
+            h.Show();*/
+            
+        }
     }
 }
