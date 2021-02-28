@@ -118,7 +118,7 @@ namespace University_E_System
             std_NameLabel.AutoSize = true;
             std_NameLabel.Font = new System.Drawing.Font("Segoe Print", 9F);
             std_NameLabel.ForeColor = System.Drawing.SystemColors.ControlDark;
-            std_NameLabel.Location = new System.Drawing.Point(44, 179);
+            std_NameLabel.Location = new System.Drawing.Point(31, 179);
             std_NameLabel.Name = "std_NameLabel";
             std_NameLabel.Size = new System.Drawing.Size(49, 21);
             std_NameLabel.TabIndex = 7;
@@ -151,7 +151,7 @@ namespace University_E_System
             e_MailLabel1.AutoSize = true;
             e_MailLabel1.Font = new System.Drawing.Font("Segoe Print", 9F);
             e_MailLabel1.ForeColor = System.Drawing.SystemColors.ControlDark;
-            e_MailLabel1.Location = new System.Drawing.Point(41, 210);
+            e_MailLabel1.Location = new System.Drawing.Point(29, 210);
             e_MailLabel1.Name = "e_MailLabel1";
             e_MailLabel1.Size = new System.Drawing.Size(51, 21);
             e_MailLabel1.TabIndex = 11;
@@ -162,7 +162,7 @@ namespace University_E_System
             passwordLabel1.AutoSize = true;
             passwordLabel1.Font = new System.Drawing.Font("Segoe Print", 9F);
             passwordLabel1.ForeColor = System.Drawing.SystemColors.ControlDark;
-            passwordLabel1.Location = new System.Drawing.Point(41, 250);
+            passwordLabel1.Location = new System.Drawing.Point(29, 248);
             passwordLabel1.Name = "passwordLabel1";
             passwordLabel1.Size = new System.Drawing.Size(71, 21);
             passwordLabel1.TabIndex = 12;
@@ -213,6 +213,7 @@ namespace University_E_System
             this.TopPanel.Name = "TopPanel";
             this.TopPanel.Size = new System.Drawing.Size(1055, 36);
             this.TopPanel.TabIndex = 0;
+            this.TopPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.TopPanel_Paint);
             // 
             // btnBackLoginStudent
             // 

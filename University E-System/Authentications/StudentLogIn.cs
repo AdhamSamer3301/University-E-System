@@ -20,7 +20,7 @@ namespace University_E_System
             // TODO: This line of code loads data into the '_University_E_SystemDataSet.Faculty' table. You can move, or remove it, as needed.
             this.facultyTableAdapter.Fill(this._University_E_SystemDataSet.Faculty);
             // TODO: This line of code loads data into the '_University_E_SystemDataSet.Department' table. You can move, or remove it, as needed.
-            //this.departmentTableAdapter.Fill(this._University_E_SystemDataSet.Department);
+            this.departmentTableAdapter.Fill(this._University_E_SystemDataSet.Department);
             // TODO: This line of code loads data into the '_University_E_SystemDataSet.Student' table. You can move, or remove it, as needed.
             //this.studentTableAdapter.Fill(this._University_E_SystemDataSet.Student);
             studentBindingNavigator.Hide();
@@ -143,7 +143,7 @@ namespace University_E_System
                 reader = cmd.ExecuteReader();
                 if (reader != null && reader.HasRows)
                 {
-                    Showdata();
+                    //Showdata();
                     MessageBox.Show("Welcome :D !");
                     Student s = new Student();
                     s.Show();
@@ -167,6 +167,11 @@ namespace University_E_System
             //;
             //cmd.ExecuteScalar();
             //studentTableAdapter.Fill(grid);
+        }
+
+        private void TopPanel_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

@@ -24,5 +24,10 @@ namespace University_E_System.Chatstm
             manager.ColorScheme = new ColorScheme(Primary.Blue400, Primary.Blue500, Primary.Blue500, Accent.LightBlue200, TextShade.WHITE);
         }
 
+        private void SendBtn_Click(object sender, EventArgs e)
+        {
+            listMessages.Items.Add("Me : " + textBox2.Text);
+            textBox2.Text = "";
+        }
     }
 }

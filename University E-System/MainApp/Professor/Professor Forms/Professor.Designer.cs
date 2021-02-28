@@ -96,11 +96,11 @@
             // 
             this.lblLogoProf.AutoSize = true;
             this.lblLogoProf.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(59)))));
-            this.lblLogoProf.Font = new System.Drawing.Font("Algerian", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.lblLogoProf.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.lblLogoProf.ForeColor = System.Drawing.Color.Silver;
             this.lblLogoProf.Location = new System.Drawing.Point(10, 14);
             this.lblLogoProf.Name = "lblLogoProf";
-            this.lblLogoProf.Size = new System.Drawing.Size(168, 30);
+            this.lblLogoProf.Size = new System.Drawing.Size(140, 31);
             this.lblLogoProf.TabIndex = 4;
             this.lblLogoProf.Text = "Professor";
             // 
@@ -222,13 +222,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1174, 609);
             this.Controls.Add(this.panelDesktopProf);
             this.Controls.Add(this.panelTitleBar);
             this.Controls.Add(this.panelMenuAdmin);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Professor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Professor";

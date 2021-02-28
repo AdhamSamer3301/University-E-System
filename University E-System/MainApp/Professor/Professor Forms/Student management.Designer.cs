@@ -68,11 +68,6 @@
             this.phoneTextBox = new System.Windows.Forms.TextBox();
             this.PicBox = new System.Windows.Forms.PictureBox();
             this.studentDataGridView = new System.Windows.Forms.DataGridView();
-            this.departmentBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.departmentIDComboBox = new System.Windows.Forms.ComboBox();
-            this.facultyBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.facultyIDComboBox = new System.Windows.Forms.ComboBox();
-            this.helpbtn = new System.Windows.Forms.Button();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -80,6 +75,11 @@
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.departmentBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.departmentIDComboBox = new System.Windows.Forms.ComboBox();
+            this.facultyBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.facultyIDComboBox = new System.Windows.Forms.ComboBox();
+            this.helpbtn = new System.Windows.Forms.Button();
             this.PrintStd = new Guna.UI2.WinForms.Guna2Button();
             studentIDLabel = new System.Windows.Forms.Label();
             studentNameLabel = new System.Windows.Forms.Label();
@@ -102,72 +102,89 @@
             // studentIDLabel
             // 
             studentIDLabel.AutoSize = true;
-            studentIDLabel.Location = new System.Drawing.Point(33, 39);
+            studentIDLabel.BackColor = System.Drawing.Color.GhostWhite;
+            studentIDLabel.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            studentIDLabel.Location = new System.Drawing.Point(10, 36);
             studentIDLabel.Name = "studentIDLabel";
-            studentIDLabel.Size = new System.Drawing.Size(61, 13);
+            studentIDLabel.Size = new System.Drawing.Size(72, 19);
             studentIDLabel.TabIndex = 58;
             studentIDLabel.Text = "Student ID:";
             // 
             // studentNameLabel
             // 
             studentNameLabel.AutoSize = true;
-            studentNameLabel.Location = new System.Drawing.Point(33, 65);
+            studentNameLabel.BackColor = System.Drawing.Color.GhostWhite;
+            studentNameLabel.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            studentNameLabel.Location = new System.Drawing.Point(12, 66);
             studentNameLabel.Name = "studentNameLabel";
-            studentNameLabel.Size = new System.Drawing.Size(78, 13);
+            studentNameLabel.Size = new System.Drawing.Size(92, 19);
             studentNameLabel.TabIndex = 60;
             studentNameLabel.Text = "Student Name:";
+            studentNameLabel.Click += new System.EventHandler(this.studentNameLabel_Click);
             // 
             // e_MailLabel
             // 
             e_MailLabel.AutoSize = true;
-            e_MailLabel.Location = new System.Drawing.Point(33, 91);
+            e_MailLabel.BackColor = System.Drawing.Color.GhostWhite;
+            e_MailLabel.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            e_MailLabel.Location = new System.Drawing.Point(12, 90);
             e_MailLabel.Name = "e_MailLabel";
-            e_MailLabel.Size = new System.Drawing.Size(39, 13);
+            e_MailLabel.Size = new System.Drawing.Size(46, 19);
             e_MailLabel.TabIndex = 62;
             e_MailLabel.Text = "E Mail:";
             // 
             // passwordLabel
             // 
             passwordLabel.AutoSize = true;
-            passwordLabel.Location = new System.Drawing.Point(33, 117);
+            passwordLabel.BackColor = System.Drawing.Color.GhostWhite;
+            passwordLabel.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            passwordLabel.Location = new System.Drawing.Point(10, 122);
             passwordLabel.Name = "passwordLabel";
-            passwordLabel.Size = new System.Drawing.Size(56, 13);
+            passwordLabel.Size = new System.Drawing.Size(65, 19);
             passwordLabel.TabIndex = 64;
             passwordLabel.Text = "Password:";
             // 
             // phoneLabel
             // 
             phoneLabel.AutoSize = true;
-            phoneLabel.Location = new System.Drawing.Point(33, 143);
+            phoneLabel.BackColor = System.Drawing.Color.GhostWhite;
+            phoneLabel.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            phoneLabel.Location = new System.Drawing.Point(12, 154);
             phoneLabel.Name = "phoneLabel";
-            phoneLabel.Size = new System.Drawing.Size(41, 13);
+            phoneLabel.Size = new System.Drawing.Size(46, 19);
             phoneLabel.TabIndex = 66;
             phoneLabel.Text = "Phone:";
             // 
             // pPLabel1
             // 
             pPLabel1.AutoSize = true;
-            pPLabel1.Location = new System.Drawing.Point(33, 166);
+            pPLabel1.BackColor = System.Drawing.Color.GhostWhite;
+            pPLabel1.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            pPLabel1.Location = new System.Drawing.Point(12, 185);
             pPLabel1.Name = "pPLabel1";
-            pPLabel1.Size = new System.Drawing.Size(24, 13);
+            pPLabel1.Size = new System.Drawing.Size(28, 19);
             pPLabel1.TabIndex = 68;
             pPLabel1.Text = "PP:";
             // 
             // facultyIDLabel
             // 
             facultyIDLabel.AutoSize = true;
-            facultyIDLabel.Location = new System.Drawing.Point(33, 225);
+            facultyIDLabel.BackColor = System.Drawing.Color.GhostWhite;
+            facultyIDLabel.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            facultyIDLabel.Location = new System.Drawing.Point(12, 276);
             facultyIDLabel.Name = "facultyIDLabel";
-            facultyIDLabel.Size = new System.Drawing.Size(47, 13);
+            facultyIDLabel.Size = new System.Drawing.Size(57, 19);
             facultyIDLabel.TabIndex = 70;
             facultyIDLabel.Text = "Faculty :";
             // 
             // departmentIDLabel
             // 
             departmentIDLabel.AutoSize = true;
-            departmentIDLabel.Location = new System.Drawing.Point(33, 252);
+            departmentIDLabel.BackColor = System.Drawing.Color.GhostWhite;
+            departmentIDLabel.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            departmentIDLabel.Location = new System.Drawing.Point(12, 310);
             departmentIDLabel.Name = "departmentIDLabel";
-            departmentIDLabel.Size = new System.Drawing.Size(68, 13);
+            departmentIDLabel.Size = new System.Drawing.Size(84, 19);
             departmentIDLabel.TabIndex = 72;
             departmentIDLabel.Text = "Department :";
             // 
@@ -186,12 +203,12 @@
             this.addSTD.Font = new System.Drawing.Font("Segoe Print", 10.2F, System.Drawing.FontStyle.Bold);
             this.addSTD.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.addSTD.HoverState.Parent = this.addSTD;
-            this.addSTD.Location = new System.Drawing.Point(14, 334);
+            this.addSTD.Location = new System.Drawing.Point(32, 364);
             this.addSTD.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.addSTD.Name = "addSTD";
             this.addSTD.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.addSTD.ShadowDecoration.Parent = this.addSTD;
-            this.addSTD.Size = new System.Drawing.Size(82, 43);
+            this.addSTD.Size = new System.Drawing.Size(95, 43);
             this.addSTD.TabIndex = 54;
             this.addSTD.Text = "Add";
             this.addSTD.Click += new System.EventHandler(this.AddSTD_Click);
@@ -211,7 +228,7 @@
             this.delSTD.Font = new System.Drawing.Font("Segoe Print", 10.2F, System.Drawing.FontStyle.Bold);
             this.delSTD.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.delSTD.HoverState.Parent = this.delSTD;
-            this.delSTD.Location = new System.Drawing.Point(206, 334);
+            this.delSTD.Location = new System.Drawing.Point(206, 364);
             this.delSTD.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.delSTD.Name = "delSTD";
             this.delSTD.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -236,7 +253,7 @@
             this.saveSTD.Font = new System.Drawing.Font("Segoe Print", 10.2F, System.Drawing.FontStyle.Bold);
             this.saveSTD.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.saveSTD.HoverState.Parent = this.saveSTD;
-            this.saveSTD.Location = new System.Drawing.Point(102, 334);
+            this.saveSTD.Location = new System.Drawing.Point(206, 429);
             this.saveSTD.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.saveSTD.Name = "saveSTD";
             this.saveSTD.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -261,7 +278,7 @@
             this.UploadPhoto.Font = new System.Drawing.Font("Segoe Print", 10.2F, System.Drawing.FontStyle.Bold);
             this.UploadPhoto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.UploadPhoto.HoverState.Parent = this.UploadPhoto;
-            this.UploadPhoto.Location = new System.Drawing.Point(245, 183);
+            this.UploadPhoto.Location = new System.Drawing.Point(257, 183);
             this.UploadPhoto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.UploadPhoto.Name = "UploadPhoto";
             this.UploadPhoto.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -328,7 +345,7 @@
             this.studentBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.studentBindingNavigator.Name = "studentBindingNavigator";
             this.studentBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.studentBindingNavigator.Size = new System.Drawing.Size(802, 25);
+            this.studentBindingNavigator.Size = new System.Drawing.Size(815, 25);
             this.studentBindingNavigator.TabIndex = 58;
             this.studentBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -430,52 +447,57 @@
             // studentIDTextBox
             // 
             this.studentIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.studentBindingSource, "StudentID", true));
-            this.studentIDTextBox.Location = new System.Drawing.Point(118, 36);
+            this.studentIDTextBox.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.studentIDTextBox.Location = new System.Drawing.Point(130, 35);
             this.studentIDTextBox.Name = "studentIDTextBox";
             this.studentIDTextBox.ReadOnly = true;
-            this.studentIDTextBox.Size = new System.Drawing.Size(121, 20);
+            this.studentIDTextBox.Size = new System.Drawing.Size(121, 27);
             this.studentIDTextBox.TabIndex = 59;
             // 
             // studentNameTextBox
             // 
             this.studentNameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.studentBindingSource, "StudentName", true));
-            this.studentNameTextBox.Location = new System.Drawing.Point(118, 62);
+            this.studentNameTextBox.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.studentNameTextBox.Location = new System.Drawing.Point(130, 65);
             this.studentNameTextBox.Name = "studentNameTextBox";
-            this.studentNameTextBox.Size = new System.Drawing.Size(121, 20);
+            this.studentNameTextBox.Size = new System.Drawing.Size(121, 27);
             this.studentNameTextBox.TabIndex = 61;
             // 
             // e_MailTextBox
             // 
             this.e_MailTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.studentBindingSource, "E_Mail", true));
-            this.e_MailTextBox.Location = new System.Drawing.Point(118, 88);
+            this.e_MailTextBox.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.e_MailTextBox.Location = new System.Drawing.Point(130, 95);
             this.e_MailTextBox.Name = "e_MailTextBox";
-            this.e_MailTextBox.Size = new System.Drawing.Size(121, 20);
+            this.e_MailTextBox.Size = new System.Drawing.Size(121, 27);
             this.e_MailTextBox.TabIndex = 63;
             // 
             // passwordTextBox
             // 
             this.passwordTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.studentBindingSource, "Password", true));
-            this.passwordTextBox.Location = new System.Drawing.Point(118, 114);
+            this.passwordTextBox.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passwordTextBox.Location = new System.Drawing.Point(130, 125);
             this.passwordTextBox.Name = "passwordTextBox";
             this.passwordTextBox.PasswordChar = '*';
-            this.passwordTextBox.Size = new System.Drawing.Size(121, 20);
+            this.passwordTextBox.Size = new System.Drawing.Size(121, 27);
             this.passwordTextBox.TabIndex = 65;
             // 
             // phoneTextBox
             // 
             this.phoneTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.studentBindingSource, "Phone", true));
-            this.phoneTextBox.Location = new System.Drawing.Point(118, 140);
+            this.phoneTextBox.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.phoneTextBox.Location = new System.Drawing.Point(130, 158);
             this.phoneTextBox.Name = "phoneTextBox";
-            this.phoneTextBox.Size = new System.Drawing.Size(121, 20);
+            this.phoneTextBox.Size = new System.Drawing.Size(121, 27);
             this.phoneTextBox.TabIndex = 67;
             // 
             // PicBox
             // 
             this.PicBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PicBox.DataBindings.Add(new System.Windows.Forms.Binding("Image", this.studentBindingSource, "PP", true));
-            this.PicBox.Location = new System.Drawing.Point(118, 166);
+            this.PicBox.Location = new System.Drawing.Point(130, 193);
             this.PicBox.Name = "PicBox";
-            this.PicBox.Size = new System.Drawing.Size(121, 50);
+            this.PicBox.Size = new System.Drawing.Size(121, 78);
             this.PicBox.TabIndex = 69;
             this.PicBox.TabStop = false;
             // 
@@ -492,58 +514,10 @@
             this.dataGridViewTextBoxColumn6,
             this.dataGridViewTextBoxColumn7});
             this.studentDataGridView.DataSource = this.studentBindingSource;
-            this.studentDataGridView.Location = new System.Drawing.Point(334, 36);
+            this.studentDataGridView.Location = new System.Drawing.Point(343, 28);
             this.studentDataGridView.Name = "studentDataGridView";
             this.studentDataGridView.Size = new System.Drawing.Size(438, 350);
             this.studentDataGridView.TabIndex = 72;
-            // 
-            // departmentBindingSource
-            // 
-            this.departmentBindingSource.DataMember = "Department";
-            this.departmentBindingSource.DataSource = this._University_E_SystemDataSet;
-            // 
-            // departmentIDComboBox
-            // 
-            this.departmentIDComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.departmentBindingSource, "DepartmentID", true));
-            this.departmentIDComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.studentBindingSource, "DepartmentID", true));
-            this.departmentIDComboBox.DataSource = this.departmentBindingSource;
-            this.departmentIDComboBox.DisplayMember = "DepartmentName";
-            this.departmentIDComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.departmentIDComboBox.FormattingEnabled = true;
-            this.departmentIDComboBox.Location = new System.Drawing.Point(118, 244);
-            this.departmentIDComboBox.Name = "departmentIDComboBox";
-            this.departmentIDComboBox.Size = new System.Drawing.Size(121, 21);
-            this.departmentIDComboBox.TabIndex = 73;
-            this.departmentIDComboBox.ValueMember = "DepartmentID";
-            // 
-            // facultyBindingSource
-            // 
-            this.facultyBindingSource.DataMember = "Faculty";
-            this.facultyBindingSource.DataSource = this._University_E_SystemDataSet;
-            // 
-            // facultyIDComboBox
-            // 
-            this.facultyIDComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.facultyBindingSource, "FacultyID", true));
-            this.facultyIDComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.studentBindingSource, "FacultyID", true));
-            this.facultyIDComboBox.DataSource = this.facultyBindingSource;
-            this.facultyIDComboBox.DisplayMember = "FacultyName";
-            this.facultyIDComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.facultyIDComboBox.FormattingEnabled = true;
-            this.facultyIDComboBox.Location = new System.Drawing.Point(118, 221);
-            this.facultyIDComboBox.Name = "facultyIDComboBox";
-            this.facultyIDComboBox.Size = new System.Drawing.Size(121, 21);
-            this.facultyIDComboBox.TabIndex = 74;
-            this.facultyIDComboBox.ValueMember = "FacultyID";
-            // 
-            // helpbtn
-            // 
-            this.helpbtn.Location = new System.Drawing.Point(778, 39);
-            this.helpbtn.Name = "helpbtn";
-            this.helpbtn.Size = new System.Drawing.Size(24, 30);
-            this.helpbtn.TabIndex = 75;
-            this.helpbtn.Text = "?";
-            this.helpbtn.UseVisualStyleBackColor = true;
-            this.helpbtn.Click += new System.EventHandler(this.helpbtn_Click);
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -588,6 +562,56 @@
             this.dataGridViewTextBoxColumn7.HeaderText = "DepartmentID";
             this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
             // 
+            // departmentBindingSource
+            // 
+            this.departmentBindingSource.DataMember = "Department";
+            this.departmentBindingSource.DataSource = this._University_E_SystemDataSet;
+            // 
+            // departmentIDComboBox
+            // 
+            this.departmentIDComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.departmentBindingSource, "DepartmentID", true));
+            this.departmentIDComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.studentBindingSource, "DepartmentID", true));
+            this.departmentIDComboBox.DataSource = this.departmentBindingSource;
+            this.departmentIDComboBox.DisplayMember = "DepartmentName";
+            this.departmentIDComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.departmentIDComboBox.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.departmentIDComboBox.FormattingEnabled = true;
+            this.departmentIDComboBox.Location = new System.Drawing.Point(130, 311);
+            this.departmentIDComboBox.Name = "departmentIDComboBox";
+            this.departmentIDComboBox.Size = new System.Drawing.Size(121, 27);
+            this.departmentIDComboBox.TabIndex = 73;
+            this.departmentIDComboBox.ValueMember = "DepartmentID";
+            // 
+            // facultyBindingSource
+            // 
+            this.facultyBindingSource.DataMember = "Faculty";
+            this.facultyBindingSource.DataSource = this._University_E_SystemDataSet;
+            // 
+            // facultyIDComboBox
+            // 
+            this.facultyIDComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.facultyBindingSource, "FacultyID", true));
+            this.facultyIDComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.studentBindingSource, "FacultyID", true));
+            this.facultyIDComboBox.DataSource = this.facultyBindingSource;
+            this.facultyIDComboBox.DisplayMember = "FacultyName";
+            this.facultyIDComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.facultyIDComboBox.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.facultyIDComboBox.FormattingEnabled = true;
+            this.facultyIDComboBox.Location = new System.Drawing.Point(130, 278);
+            this.facultyIDComboBox.Name = "facultyIDComboBox";
+            this.facultyIDComboBox.Size = new System.Drawing.Size(121, 27);
+            this.facultyIDComboBox.TabIndex = 74;
+            this.facultyIDComboBox.ValueMember = "FacultyID";
+            // 
+            // helpbtn
+            // 
+            this.helpbtn.Location = new System.Drawing.Point(787, 36);
+            this.helpbtn.Name = "helpbtn";
+            this.helpbtn.Size = new System.Drawing.Size(24, 30);
+            this.helpbtn.TabIndex = 75;
+            this.helpbtn.Text = "?";
+            this.helpbtn.UseVisualStyleBackColor = true;
+            this.helpbtn.Click += new System.EventHandler(this.helpbtn_Click);
+            // 
             // PrintStd
             // 
             this.PrintStd.BackColor = System.Drawing.Color.Goldenrod;
@@ -603,7 +627,7 @@
             this.PrintStd.Font = new System.Drawing.Font("Segoe Print", 10.2F, System.Drawing.FontStyle.Bold);
             this.PrintStd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.PrintStd.HoverState.Parent = this.PrintStd;
-            this.PrintStd.Location = new System.Drawing.Point(102, 418);
+            this.PrintStd.Location = new System.Drawing.Point(32, 429);
             this.PrintStd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PrintStd.Name = "PrintStd";
             this.PrintStd.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -617,8 +641,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.GhostWhite;
-            this.ClientSize = new System.Drawing.Size(802, 561);
+            this.ClientSize = new System.Drawing.Size(815, 512);
             this.Controls.Add(this.PrintStd);
             this.Controls.Add(this.helpbtn);
             this.Controls.Add(this.facultyIDComboBox);

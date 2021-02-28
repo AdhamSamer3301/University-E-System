@@ -409,43 +409,48 @@
             // phoneTextBox
             // 
             this.phoneTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.studentBindingSource, "Phone", true));
+            this.phoneTextBox.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.phoneTextBox.Location = new System.Drawing.Point(149, 170);
             this.phoneTextBox.Name = "phoneTextBox";
-            this.phoneTextBox.Size = new System.Drawing.Size(121, 29);
+            this.phoneTextBox.Size = new System.Drawing.Size(121, 27);
             this.phoneTextBox.TabIndex = 62;
             // 
             // passwordTextBox
             // 
             this.passwordTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.studentBindingSource, "Password", true));
+            this.passwordTextBox.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.passwordTextBox.Location = new System.Drawing.Point(149, 135);
             this.passwordTextBox.Name = "passwordTextBox";
             this.passwordTextBox.PasswordChar = '*';
-            this.passwordTextBox.Size = new System.Drawing.Size(121, 29);
+            this.passwordTextBox.Size = new System.Drawing.Size(121, 27);
             this.passwordTextBox.TabIndex = 60;
             // 
             // e_MailTextBox
             // 
             this.e_MailTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.studentBindingSource, "E_Mail", true));
+            this.e_MailTextBox.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.e_MailTextBox.Location = new System.Drawing.Point(149, 100);
             this.e_MailTextBox.Name = "e_MailTextBox";
-            this.e_MailTextBox.Size = new System.Drawing.Size(121, 29);
+            this.e_MailTextBox.Size = new System.Drawing.Size(121, 27);
             this.e_MailTextBox.TabIndex = 58;
             // 
             // studentNameTextBox
             // 
             this.studentNameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.studentBindingSource, "StudentName", true));
+            this.studentNameTextBox.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.studentNameTextBox.Location = new System.Drawing.Point(149, 65);
             this.studentNameTextBox.Name = "studentNameTextBox";
-            this.studentNameTextBox.Size = new System.Drawing.Size(121, 29);
+            this.studentNameTextBox.Size = new System.Drawing.Size(121, 27);
             this.studentNameTextBox.TabIndex = 56;
             // 
             // studentIDTextBox
             // 
             this.studentIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.studentBindingSource, "StudentID", true));
+            this.studentIDTextBox.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.studentIDTextBox.Location = new System.Drawing.Point(149, 30);
             this.studentIDTextBox.Name = "studentIDTextBox";
             this.studentIDTextBox.ReadOnly = true;
-            this.studentIDTextBox.Size = new System.Drawing.Size(121, 29);
+            this.studentIDTextBox.Size = new System.Drawing.Size(121, 27);
             this.studentIDTextBox.TabIndex = 54;
             // 
             // facultyIDComboBox
@@ -454,10 +459,11 @@
             this.facultyIDComboBox.DataSource = this.facultyBindingSource;
             this.facultyIDComboBox.DisplayMember = "FacultyName";
             this.facultyIDComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.facultyIDComboBox.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.facultyIDComboBox.FormattingEnabled = true;
             this.facultyIDComboBox.Location = new System.Drawing.Point(149, 264);
             this.facultyIDComboBox.Name = "facultyIDComboBox";
-            this.facultyIDComboBox.Size = new System.Drawing.Size(121, 29);
+            this.facultyIDComboBox.Size = new System.Drawing.Size(121, 27);
             this.facultyIDComboBox.TabIndex = 68;
             this.facultyIDComboBox.ValueMember = "FacultyID";
             // 
@@ -472,10 +478,11 @@
             this.departmentIDComboBox.DataSource = this.departmentBindingSource;
             this.departmentIDComboBox.DisplayMember = "DepartmentName";
             this.departmentIDComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.departmentIDComboBox.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.departmentIDComboBox.FormattingEnabled = true;
             this.departmentIDComboBox.Location = new System.Drawing.Point(149, 296);
             this.departmentIDComboBox.Name = "departmentIDComboBox";
-            this.departmentIDComboBox.Size = new System.Drawing.Size(121, 29);
+            this.departmentIDComboBox.Size = new System.Drawing.Size(121, 27);
             this.departmentIDComboBox.TabIndex = 69;
             this.departmentIDComboBox.ValueMember = "DepartmentID";
             // 

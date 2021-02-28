@@ -112,54 +112,60 @@
             // departmentIDLabel
             // 
             departmentIDLabel.AutoSize = true;
-            departmentIDLabel.Location = new System.Drawing.Point(497, 274);
+            departmentIDLabel.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            departmentIDLabel.Location = new System.Drawing.Point(477, 271);
             departmentIDLabel.Name = "departmentIDLabel";
-            departmentIDLabel.Size = new System.Drawing.Size(79, 13);
+            departmentIDLabel.Size = new System.Drawing.Size(96, 19);
             departmentIDLabel.TabIndex = 64;
             departmentIDLabel.Text = "Department ID:";
             // 
             // departmentNameLabel
             // 
             departmentNameLabel.AutoSize = true;
-            departmentNameLabel.Location = new System.Drawing.Point(497, 300);
+            departmentNameLabel.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            departmentNameLabel.Location = new System.Drawing.Point(477, 297);
             departmentNameLabel.Name = "departmentNameLabel";
-            departmentNameLabel.Size = new System.Drawing.Size(96, 13);
+            departmentNameLabel.Size = new System.Drawing.Size(116, 19);
             departmentNameLabel.TabIndex = 66;
             departmentNameLabel.Text = "Department Name:";
             // 
             // facultyIDLabel
             // 
             facultyIDLabel.AutoSize = true;
-            facultyIDLabel.Location = new System.Drawing.Point(497, 326);
+            facultyIDLabel.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            facultyIDLabel.Location = new System.Drawing.Point(477, 323);
             facultyIDLabel.Name = "facultyIDLabel";
-            facultyIDLabel.Size = new System.Drawing.Size(47, 13);
+            facultyIDLabel.Size = new System.Drawing.Size(57, 19);
             facultyIDLabel.TabIndex = 68;
             facultyIDLabel.Text = "Faculty :";
             // 
             // facultyIDLabel1
             // 
             facultyIDLabel1.AutoSize = true;
-            facultyIDLabel1.Location = new System.Drawing.Point(69, 278);
+            facultyIDLabel1.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            facultyIDLabel1.Location = new System.Drawing.Point(49, 275);
             facultyIDLabel1.Name = "facultyIDLabel1";
-            facultyIDLabel1.Size = new System.Drawing.Size(58, 13);
+            facultyIDLabel1.Size = new System.Drawing.Size(69, 19);
             facultyIDLabel1.TabIndex = 69;
             facultyIDLabel1.Text = "Faculty ID:";
             // 
             // facultyNameLabel
             // 
             facultyNameLabel.AutoSize = true;
-            facultyNameLabel.Location = new System.Drawing.Point(69, 304);
+            facultyNameLabel.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            facultyNameLabel.Location = new System.Drawing.Point(49, 301);
             facultyNameLabel.Name = "facultyNameLabel";
-            facultyNameLabel.Size = new System.Drawing.Size(75, 13);
+            facultyNameLabel.Size = new System.Drawing.Size(89, 19);
             facultyNameLabel.TabIndex = 71;
             facultyNameLabel.Text = "Faculty Name:";
             // 
             // levelsLabel
             // 
             levelsLabel.AutoSize = true;
-            levelsLabel.Location = new System.Drawing.Point(69, 330);
+            levelsLabel.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            levelsLabel.Location = new System.Drawing.Point(49, 327);
             levelsLabel.Name = "levelsLabel";
-            levelsLabel.Size = new System.Drawing.Size(41, 13);
+            levelsLabel.Size = new System.Drawing.Size(45, 19);
             levelsLabel.TabIndex = 73;
             levelsLabel.Text = "Levels:";
             // 
@@ -318,6 +324,7 @@
             // facultyDataGridView
             // 
             this.facultyDataGridView.AutoGenerateColumns = false;
+            this.facultyDataGridView.BackgroundColor = System.Drawing.Color.GhostWhite;
             this.facultyDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.facultyDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -362,6 +369,7 @@
             // departmentDataGridView
             // 
             this.departmentDataGridView.AutoGenerateColumns = false;
+            this.departmentDataGridView.BackgroundColor = System.Drawing.Color.GhostWhite;
             this.departmentDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.departmentDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn4,

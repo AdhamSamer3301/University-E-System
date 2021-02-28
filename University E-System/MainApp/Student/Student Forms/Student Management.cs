@@ -94,6 +94,11 @@ namespace University_E_System.MainApp.Student.Student_Forms
             StdHelp h = new StdHelp();
             h.Show();
         }
+
+        private void studentBindingNavigator_RefreshItems(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

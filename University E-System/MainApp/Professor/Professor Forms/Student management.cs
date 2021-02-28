@@ -118,5 +118,10 @@ namespace University_E_System.MainApp.Professor.Professor_Forms
             };
             printer.PrintDataGridView(studentDataGridView);
         }
+
+        private void studentNameLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

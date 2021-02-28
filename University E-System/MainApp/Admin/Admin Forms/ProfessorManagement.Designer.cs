@@ -92,54 +92,60 @@
             // professorIDLabel
             // 
             professorIDLabel.AutoSize = true;
-            professorIDLabel.Location = new System.Drawing.Point(29, 60);
+            professorIDLabel.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            professorIDLabel.Location = new System.Drawing.Point(15, 58);
             professorIDLabel.Name = "professorIDLabel";
-            professorIDLabel.Size = new System.Drawing.Size(68, 13);
+            professorIDLabel.Size = new System.Drawing.Size(80, 19);
             professorIDLabel.TabIndex = 2;
             professorIDLabel.Text = "Professor ID:";
             // 
             // professorNameLabel
             // 
             professorNameLabel.AutoSize = true;
-            professorNameLabel.Location = new System.Drawing.Point(29, 86);
+            professorNameLabel.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            professorNameLabel.Location = new System.Drawing.Point(15, 84);
             professorNameLabel.Name = "professorNameLabel";
-            professorNameLabel.Size = new System.Drawing.Size(85, 13);
+            professorNameLabel.Size = new System.Drawing.Size(100, 19);
             professorNameLabel.TabIndex = 4;
             professorNameLabel.Text = "Professor Name:";
             // 
             // facultyIDLabel
             // 
             facultyIDLabel.AutoSize = true;
-            facultyIDLabel.Location = new System.Drawing.Point(29, 112);
+            facultyIDLabel.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            facultyIDLabel.Location = new System.Drawing.Point(15, 110);
             facultyIDLabel.Name = "facultyIDLabel";
-            facultyIDLabel.Size = new System.Drawing.Size(47, 13);
+            facultyIDLabel.Size = new System.Drawing.Size(57, 19);
             facultyIDLabel.TabIndex = 6;
             facultyIDLabel.Text = "Faculty :";
             // 
             // departmentIDLabel
             // 
             departmentIDLabel.AutoSize = true;
-            departmentIDLabel.Location = new System.Drawing.Point(29, 138);
+            departmentIDLabel.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            departmentIDLabel.Location = new System.Drawing.Point(15, 136);
             departmentIDLabel.Name = "departmentIDLabel";
-            departmentIDLabel.Size = new System.Drawing.Size(68, 13);
+            departmentIDLabel.Size = new System.Drawing.Size(84, 19);
             departmentIDLabel.TabIndex = 8;
             departmentIDLabel.Text = "Department :";
             // 
             // e_MailLabel
             // 
             e_MailLabel.AutoSize = true;
-            e_MailLabel.Location = new System.Drawing.Point(29, 164);
+            e_MailLabel.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            e_MailLabel.Location = new System.Drawing.Point(15, 162);
             e_MailLabel.Name = "e_MailLabel";
-            e_MailLabel.Size = new System.Drawing.Size(39, 13);
+            e_MailLabel.Size = new System.Drawing.Size(46, 19);
             e_MailLabel.TabIndex = 10;
             e_MailLabel.Text = "E Mail:";
             // 
             // passwordLabel
             // 
             passwordLabel.AutoSize = true;
-            passwordLabel.Location = new System.Drawing.Point(29, 190);
+            passwordLabel.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            passwordLabel.Location = new System.Drawing.Point(15, 188);
             passwordLabel.Name = "passwordLabel";
-            passwordLabel.Size = new System.Drawing.Size(56, 13);
+            passwordLabel.Size = new System.Drawing.Size(65, 19);
             passwordLabel.TabIndex = 12;
             passwordLabel.Text = "Password:";
             // 
@@ -256,7 +262,6 @@
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Position";
             this.bindingNavigatorPositionItem.AutoSize = false;
-            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
             this.bindingNavigatorPositionItem.Text = "0";
@@ -352,7 +357,7 @@
             this.professorIDTextBox.Location = new System.Drawing.Point(120, 57);
             this.professorIDTextBox.Name = "professorIDTextBox";
             this.professorIDTextBox.ReadOnly = true;
-            this.professorIDTextBox.Size = new System.Drawing.Size(100, 20);
+            this.professorIDTextBox.Size = new System.Drawing.Size(121, 20);
             this.professorIDTextBox.TabIndex = 3;
             // 
             // professorNameTextBox
@@ -360,7 +365,7 @@
             this.professorNameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.professorBindingSource, "ProfessorName", true));
             this.professorNameTextBox.Location = new System.Drawing.Point(120, 83);
             this.professorNameTextBox.Name = "professorNameTextBox";
-            this.professorNameTextBox.Size = new System.Drawing.Size(100, 20);
+            this.professorNameTextBox.Size = new System.Drawing.Size(121, 20);
             this.professorNameTextBox.TabIndex = 5;
             // 
             // e_MailTextBox
@@ -368,7 +373,7 @@
             this.e_MailTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.professorBindingSource, "E_Mail", true));
             this.e_MailTextBox.Location = new System.Drawing.Point(120, 161);
             this.e_MailTextBox.Name = "e_MailTextBox";
-            this.e_MailTextBox.Size = new System.Drawing.Size(100, 20);
+            this.e_MailTextBox.Size = new System.Drawing.Size(121, 20);
             this.e_MailTextBox.TabIndex = 11;
             // 
             // passwordTextBox
@@ -377,7 +382,7 @@
             this.passwordTextBox.Location = new System.Drawing.Point(120, 187);
             this.passwordTextBox.Name = "passwordTextBox";
             this.passwordTextBox.PasswordChar = '*';
-            this.passwordTextBox.Size = new System.Drawing.Size(100, 20);
+            this.passwordTextBox.Size = new System.Drawing.Size(121, 20);
             this.passwordTextBox.TabIndex = 13;
             // 
             // PrintProf
